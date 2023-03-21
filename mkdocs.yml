@@ -4,5 +4,7 @@ repo_url: https://github.com/FernandoCelmer/mkdocs-dracula-theme
 site_url: https://www.fernandocelmer.com/
 copyright: Fernando Celmer
 
+Home: index.md
+
 theme:
-  name: dracula
+  name: readthedocs
