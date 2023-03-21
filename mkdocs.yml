@@ -1,0 +1,10 @@
+site_name: 🧛🏻‍♂️ Dark theme for Mkdocs
+repo_name: FernandoCelmer/mkdocs-dracula-theme
+repo_url: https://github.com/FernandoCelmer/mkdocs-dracula-theme
+site_url: https://www.fernandocelmer.com/
+copyright: Fernando Celmer
+
+Home: index.md
+
+theme:
+  name: readthedocs
