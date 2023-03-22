@@ -2,6 +2,6 @@
 
 ---
 
-## v0.0.1
+## v1.0.0
 
-- [📦 PyPI - Build 0.0.1](https://github.com/FernandoCelmer/mkdocs/releases/tag/v0.0.1)
+- [📦 PyPI: Build 1.0.0](https://github.com/FernandoCelmer/mkdocs/releases/tag/v1.0.0)
