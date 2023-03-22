@@ -1,0 +1,40 @@
+<nav id="sidebar" class="drac-bg-black">
+    <div class="custom-menu">
+        <button type="button" id="sidebarCollapse" class="btn btn-primary">
+            <i class="fa fa-bars"></i>
+            <span class="sr-only">Menu</span>
+        </button>
+    </div>
+
+    <div class="p-4">
+        {% if config.theme.logo %}
+            <img class="logo" src="{{ config.theme.logo|url }}" height="150px">
+        {% endif %}
+
+        <div class="drac-text-center">
+            {% if config.site_name %}
+                <span class="drac-text drac-line-height drac-text-white">{{ config.site_name }}</span>
+            {% endif %}
+        </div>
+
+        <div class="drac-box flex-column">
+            <ul class="dot-ul">
+                <li><div class="dot-li drac-bg-cyan"></div></li>
+                <li><div class="dot-li drac-bg-green"></div></li>
+                <li><div class="dot-li drac-bg-orange"></div></li>
+                <li><div class="dot-li drac-bg-pink"></div></li>
+                <li><div class="dot-li drac-bg-purple"></div></li>
+                <li><div class="dot-li drac-bg-red"></div></li>
+                <li><div class="dot-li drac-bg-yellow"></div></li>
+            </ul>
+        </div>
+
+        <hr class="drac-divider" />
+
+        <!-- block menu -->
+        <ul class="mb-5 drac-list drac-list-none">
+            {% include "modules/menu.html" %}
+        </ul>
+        <!-- endblock -->
+    </div>
+</nav>
