@@ -12,7 +12,7 @@ setup(
     author='Fernando Celmer',
     version=__version__,
     author_email='email@fernandocelmer.com',
-    url='https://github.com/FernandoCelmer/mkdocs-dracula-theme',
+    url='https://github.com/dracula/mkdocs',
     description="🧛🏻‍♂️ Dark theme for Mkdocs",
     long_description=long_description,
     long_description_content_type="text/markdown",
