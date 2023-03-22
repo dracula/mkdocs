@@ -1,40 +1,35 @@
-<nav id="sidebar" class="drac-bg-black">
-    <div class="custom-menu">
-        <button type="button" id="sidebarCollapse" class="btn btn-primary">
-            <i class="fa fa-bars"></i>
-            <span class="sr-only">Menu</span>
-        </button>
+<!-- block source -->
+<div class="md-source source-detail">
+    <div class="md-source-repo-icon">
+        <i class="fa fa-github-alt" aria-hidden="true"></i>
     </div>
 
-    <div class="p-4">
-        {% if config.theme.logo %}
-            <img class="logo" src="{{ config.theme.logo|url }}" height="150px">
-        {% endif %}
+    <div class="md-source-repo-url">
+        <a href="{{ config.repo_url }}"
+            class="md-source drac-anchor drac-text drac-text-white drac-text-cyan-green--hover">
+            {{ config.repo_name }}
+        </a>
 
-        <div class="drac-text-center">
-            {% if config.site_name %}
-                <span class="drac-text drac-line-height drac-text-white">{{ config.site_name }}</span>
-            {% endif %}
-        </div>
+        <ul class="md-source-repo-text">
+            <li>
+                <i class="fa fa-tag" aria-hidden="true"></i>
+                <img alt="GitHub tag (latest by date)"
+                    src="https://img.shields.io/github/v/tag/{{ config.repo_name }}?color=white&label=%20&style=flat-square">
+            </li>
 
-        <div class="drac-box flex-column">
-            <ul class="dot-ul">
-                <li><div class="dot-li drac-bg-cyan"></div></li>
-                <li><div class="dot-li drac-bg-green"></div></li>
-                <li><div class="dot-li drac-bg-orange"></div></li>
-                <li><div class="dot-li drac-bg-pink"></div></li>
-                <li><div class="dot-li drac-bg-purple"></div></li>
-                <li><div class="dot-li drac-bg-red"></div></li>
-                <li><div class="dot-li drac-bg-yellow"></div></li>
-            </ul>
-        </div>
+            <li>
+                <i class="fa fa-star" aria-hidden="true"></i>
+                <img alt="GitHub Repo stars"
+                    src="https://img.shields.io/github/stars/{{ config.repo_name }}?color=white&label=%20&style=flat-square">
+            </li>
 
-        <hr class="drac-divider" />
-
-        <!-- block menu -->
-        <ul class="mb-5 drac-list drac-list-none">
-            {% include "modules/menu.html" %}
+            <li>
+                <i class="fa fa-code-fork" aria-hidden="true"></i>
+                <img alt="GitHub forks"
+                    src="https://img.shields.io/github/forks/{{ config.repo_name }}?color=white&label=%20&style=flat-square">
+            </li>
         </ul>
-        <!-- endblock -->
     </div>
-</nav>
+
+</div>
+<!--  endblock -->
