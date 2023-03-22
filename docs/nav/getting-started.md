@@ -2,13 +2,21 @@
 
 ---
 
-- Install the theme with pip:
+**Installation MkDocs**
 
-        pip install -U mkdocs-dracula-theme
+- To install MkDocs, run the following command from the command line:
+
+        pip install mkdocs
+
+**Installation theme**
+
+- Install the theme using PIP:
+
+        pip install mkdocs-dracula-theme
+
+**Activating theme**
 
 - After the theme is installed, edit your `mkdocs.yml` file and set the theme name to `dracula`:
 
         theme:
             name: dracula
-
-All instructions can be found at [draculatheme.com/mkdocs](https://draculatheme.com/mkdocs).
