@@ -2,7 +2,7 @@
 
 > A dark theme for [Mkdocs](https://www.mkdocs.org/).
 
-![Screenshot](https://raw.githubusercontent.com/FernandoCelmer/mkdocs/develop/screenshot.png)
+![Screenshot](https://raw.githubusercontent.com/dracula/mkdocs/main/screenshot.png)
 
 ## Install
 
