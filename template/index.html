@@ -2,113 +2,186 @@
 <html lang="en">
 
 <head>
+    <title>Dark Theme Mkdocs</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Template MkDocs">
     <meta name="author" content="FernandoCelmer">
 
-    <title>Dark Theme Mkdocs</title>
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link rel="stylesheet" href="assets/css/dracula-ui.css" />
+    <link rel="stylesheet" href="assets/css/mkdocs.css">
 
     <link rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    <link href="https://getbootstrap.com/docs/5.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="assets/css/dracula-ui.css" />
-
-    <style>
-        .b-example-divider {
-            height: 3rem;
-            background-color: rgba(0, 0, 0, .1);
-            border: solid rgba(0, 0, 0, .15);
-            border-width: 1px 0;
-            box-shadow: inset 0 .5em 1.5em rgba(0, 0, 0, .1), inset 0 .125em .5em rgba(0, 0, 0, .15);
-        }
-
-        .b-example-vr {
-            flex-shrink: 0;
-            width: 1.5rem;
-            height: 100vh;
-        }
-    </style>
 
 </head>
 
-<body class="drac-bg-black-secondary drac-text-white drac-text">
+<body class="drac-bg-black-secondary drac-text-white drac-text drac-scrollbar-purple">
 
-    <main class="d-flex flex-nowrap">
+    <div class="d-flex">
+        <nav id="sidebar" class="drac-bg-black">
+            <div class="custom-menu">
+                <button type="button" id="sidebarCollapse" class="btn btn-primary">
+                    <i class="fa fa-bars"></i>
+                    <span class="sr-only">Menu</span>
+                </button>
+            </div>
 
-        <div class="d-flex flex-column p-3 drac-bg-black" style="width: 280px;">
-            <a href="/" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
-                <div class="drac-box drac-p-sm">
-                    <a class="drac-anchor drac-text drac-text-white drac-text-purple--hover" href="/">
-                        <div class="drac-text drac-line-height drac-text-white">
-                            Dracula Theme
-                        </div>
-                        <div class="drac-text drac-line-height drac-text-purple-cyan">
-                            Mkdocs
-                        </div>
-                    </a>
-                    <div class="drac-box">
-                        <div class="drac-box">
-                            <ul style="list-style:none;display:flex;margin:10px 0 0;padding:0">
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-cyan"></div>
-                                </li>
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-green"></div>
-                                </li>
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-orange"></div>
-                                </li>
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-pink"></div>
-                                </li>
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-purple"></div>
-                                </li>
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-red"></div>
-                                </li>
-                                <li>
-                                    <div style="width:12px;height:12px;margin:3px;border-radius:100%;"
-                                        class="drac-box drac-bg-yellow"></div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
+            <div class="p-4">
+
+                <img class="logo" src="assets/img/dracula.png" height="150px">
+
+                <div class="drac-text-center">
+                    <span class="drac-text drac-line-height drac-text-white">Dark Theme Mkdocs</span>
                 </div>
-            </a>
-            <hr>
-            <ul class="drac-list drac-list-none">
-                <li class="drac-box">
-                    <a href="#" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
-                        Home
-                    </a>
-                </li>
-                <li class="drac-box">
-                    <a href="#" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
-                        Getting Started
-                    </a>
-                </li>
-                <li class="drac-box">
-                    <a href="#" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
-                        Development
-                    </a>
-                </li>
-            </ul>
-            <hr>
 
+                <div class="drac-box flex-column">
+                    <ul class="dot-ul">
+                        <li><div class="dot-li drac-bg-cyan"></div></li>
+                        <li><div class="dot-li drac-bg-green"></div></li>
+                        <li><div class="dot-li drac-bg-orange"></div></li>
+                        <li><div class="dot-li drac-bg-pink"></div></li>
+                        <li><div class="dot-li drac-bg-purple"></div></li>
+                        <li><div class="dot-li drac-bg-red"></div></li>
+                        <li><div class="dot-li drac-bg-yellow"></div></li>
+                    </ul>
+                </div>
+
+                <hr class="drac-divider" />
+
+                <ul class="mb-5 drac-list drac-list-none">
+                    <li class="drac-box">
+                        <a href="#" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                            Home
+                        </a>
+                    </li>
+                    <li class="drac-box">
+                        <a href="#" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                            Getting Started
+                        </a>
+                    </li>
+                    <li class="drac-box">
+                        <a href="#" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                            Release Notes
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <nav class="divider drac-bg-purple-cyan"></nav>
+
+        <div id="content">
+            <!-- block header -->
+            <nav class="navbar navbar-expand-xl drac-bg-purple"">
+                <div class=" container-fluid">
+
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                        aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                        <ul class="navbar-nav">
+                            <!-- block source -->
+                            <li class="nav-item">
+                                <div class="md-source source-detail">
+                                    <div class="md-source-repo-icon">
+                                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                    </div>
+
+                                    <div class="md-source-repo-url">
+                                        <a href="https://github.com/mkdocs/mkdocs-basic-theme"
+                                            class="md-source drac-anchor drac-text drac-text-white drac-text-cyan-green--hover">
+                                            FernandoCelmer/mkdocs
+                                        </a>
+                                    </div>
+                                </div>
+                            </li>
+                            <!--  endblock -->
+                        </ul>
+                    </div>
+            </div>
+            </nav>
+            <!--  endblock -->
+
+            <!-- block content -->
+            <section class="p-md-5" style="padding-top: 7px !important;">
+                <article>
+                    <p></p>
+                    <h1 id="dracula-for-mkdocs">Dracula for <a href="https://www.mkdocs.org/">Mkdocs</a></h1>
+                    <blockquote>
+                        <p>A dark theme for <a href="https://www.mkdocs.org/">Mkdocs</a>.</p>
+                    </blockquote>
+                    <h2 id="install">Install</h2>
+                    <ul>
+                        <li>
+                            <p>Install the theme with pip:</p>
+                            <pre><code>pip install -U mkdocs-dracula-theme</code></pre>
+                        </li>
+                        <li>
+                            <p>After the theme is installed, edit your <code>mkdocs.yml</code> file and set the theme name to
+                                <code>dracula</code>:</p>
+                            <pre><code>theme:
+    name: dracula</code></pre>
+                        </li>
+                    </ul>
+                    <p>All instructions can be found at <a href="https://draculatheme.com/mkdocs">draculatheme.com/mkdocs</a>.</p>
+                    <h2 id="team">Team</h2>
+                    <p>This theme is maintained by the following person(s) and a bunch of <a
+                            href="https://github.com/dracula/foobar/graphs/contributors">awesome contributors</a>.</p>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th><a href="https://github.com/FernandoCelmer"><img alt="Fernando Celmer"
+                                            src="https://github.com/FernandoCelmer.png?size=100"></a></th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><a href="https://github.com/FernandoCelmer">Fernando Celmer</a></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                    <h2 id="community">Community</h2>
+                    <ul>
+                        <li><a href="https://twitter.com/draculatheme">Twitter</a> - Best for getting updates about themes and new
+                            stuff.</li>
+                        <li><a href="https://github.com/dracula/dracula-theme/discussions">GitHub</a> - Best for asking questions and
+                            discussing issues.</li>
+                        <li><a href="https://draculatheme.com/discord-invite">Discord</a> - Best for hanging out with the community.
+                        </li>
+                    </ul>
+                    <h2 id="commit-style">Commit Style</h2>
+                    <ul>
+                        <li>⚙️ FEATURE</li>
+                        <li>📝 PEP8</li>
+                        <li>📌 ISSUE</li>
+                        <li>🪲 BUG</li>
+                        <li>📘 DOCS</li>
+                        <li>📦 PyPI</li>
+                        <li>❤️️ TEST</li>
+                        <li>⬆️ CI/CD</li>
+                        <li>⚠️ SECURITY</li>
+                    </ul>
+                    <h2 id="license">License</h2>
+                    <p><a href="./LICENSE">MIT License</a></p>
+                    <p></p>
+                </article>
+            </section>
+            <!-- endblock -->
         </div>
 
-        <div class="b-example-divider b-example-vr drac-bg-purple-cyan"></div>
+    </div>
+    </div>
 
-    </main>
-    <script src="https://getbootstrap.com/docs/5.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/js/mkdocs.js"></script>
+
 </body>
 
 </html>
