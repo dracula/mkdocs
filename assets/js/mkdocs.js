@@ -1,13 +1,1 @@
-(function ($) {
-  "use strict";
-  var fullHeight = function () {
-      $(".js-fullheight").css("height", $(window).height());
-      $(window).resize(function () {
-          $(".js-fullheight").css("height", $(window).height());
-      });
-  };
-  fullHeight();
-  $("#sidebarCollapse").on("click", function () {
-      $("#sidebar").toggleClass("active");
-  });
-})(jQuery);
+!function(i){"use strict";i(".js-fullheight").css("height",i(window).height()),i(window).resize(function(){i(".js-fullheight").css("height",i(window).height())}),i("#sidebarCollapse").on("click",function(){i("#sidebar").toggleClass("active")})}(jQuery);
