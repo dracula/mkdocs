@@ -3,7 +3,7 @@ __version__ = "1.0.0"
 __author__ = 'Fernando Celmer <email@fernandocelmer.com>'
 __copyright__ = """MIT License
 
-Copyright (c) 2023 Fernando Celmer
+Copyright (c) 2023 Dracula Theme
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
