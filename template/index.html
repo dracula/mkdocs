@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-    <title>Dark Theme Mkdocs</title>
+    <title>Dracula Theme Mkdocs</title>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -21,8 +21,8 @@
 
 <body class="drac-bg-black-secondary drac-text-white drac-text drac-scrollbar-purple">
 
-    <div class="d-flex">
-        <nav id="sidebar" class="drac-bg-black">
+    <main class="d-flex">
+        <nav id="sidebar" class="sidebar drac-bg-black">
             <div class="custom-menu">
                 <button type="button" id="sidebarCollapse" class="btn btn-primary">
                     <i class="fa fa-bars"></i>
@@ -35,7 +35,7 @@
                 <img class="logo" src="assets/img/dracula.png" height="150px">
 
                 <div class="drac-text-center">
-                    <span class="drac-text drac-line-height drac-text-white">Dark Theme Mkdocs</span>
+                    <span class="drac-text drac-line-height drac-text-white">Dracula Theme Mkdocs</span>
                 </div>
 
                 <div class="drac-box flex-column">
@@ -74,38 +74,65 @@
 
         <nav class="divider drac-bg-purple-cyan"></nav>
 
-        <div id="content">
+        <div class="content">
+
             <!-- block header -->
-            <nav class="navbar navbar-expand-xl drac-bg-purple"">
-                <div class=" container-fluid">
+            <header>
+                <nav class="navbar navbar-expand-xl drac-bg-purple"">
+                    <div class=" container-fluid">
 
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-                        aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
+                        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="navbar-toggler-icon"></span>
+                        </button> -->
 
-                    <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-                        <ul class="navbar-nav">
-                            <!-- block source -->
-                            <li class="nav-item">
-                                <div class="md-source source-detail">
-                                    <div class="md-source-repo-icon">
-                                        <i class="fa fa-github-alt" aria-hidden="true"></i>
+                        <a rel="prev" class="nav-link"><i class="fa fa-arrow-left"></i> Previous</a>
+                        <a rel="next" class="nav-link" style="padding-left: 3%;">Next <i class="fa fa-arrow-right"></i></a>
+                        
+                        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                            <ul class="navbar-nav">
+
+                                <!-- block source -->
+                                <li class="nav-item">
+                                    <div class="md-source source-detail">
+                                        <div class="md-source-repo-icon">
+                                            <i class="fa fa-github-alt" aria-hidden="true"></i>
+                                        </div>
+
+                                        <div class="md-source-repo-url">
+                                            <a href="https://github.com/FernandoCelmer/mkdocs"
+                                                class="md-source">dracula/mkdocs</a>
+
+                                            <ul class="md-source-repo-text">
+                                                <li>
+                                                    <i class="fa fa-tag" aria-hidden="true"></i>
+                                                    <img alt="GitHub tag (latest by date)"
+                                                        src="https://img.shields.io/github/v/tag/dracula/mkdocs?color=white&label=%20&style=flat-square">
+                                                </li>
+
+                                                <li>
+                                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                                    <img alt="GitHub Repo stars"
+                                                        src="https://img.shields.io/github/stars/dracula/mkdocs?color=white&label=%20&style=flat-square">
+                                                </li>
+
+                                                <li>
+                                                    <i class="fa fa-code-fork" aria-hidden="true"></i>
+                                                    <img alt="GitHub forks"
+                                                        src="https://img.shields.io/github/forks/dracula/mkdocs?color=white&label=%20&style=flat-square">
+                                                </li>
+                                            </ul>
+                                        </div>
                                     </div>
+                                </li>
+                                <!--  endblock -->
 
-                                    <div class="md-source-repo-url">
-                                        <a href="https://github.com/mkdocs/mkdocs-basic-theme"
-                                            class="md-source drac-anchor drac-text drac-text-white drac-text-cyan-green--hover">
-                                            FernandoCelmer/mkdocs
-                                        </a>
-                                    </div>
-                                </div>
-                            </li>
-                            <!--  endblock -->
-                        </ul>
+                            </ul>
+                        </div>
+
                     </div>
-            </div>
-            </nav>
+                </nav>
+            </header>
             <!--  endblock -->
 
             <!-- block content -->
@@ -113,20 +140,32 @@
                 <article>
                     <p></p>
                     <h1 id="dracula-for-mkdocs">Dracula for <a href="https://www.mkdocs.org/">Mkdocs</a></h1>
+                    <hr>
                     <blockquote>
                         <p>A dark theme for <a href="https://www.mkdocs.org/">Mkdocs</a>.</p>
                     </blockquote>
                     <h2 id="install">Install</h2>
+                    <p><strong>Installation MkDocs</strong></p>
                     <ul>
-                        <li>
-                            <p>Install the theme with pip:</p>
-                            <pre><code>pip install -U mkdocs-dracula-theme</code></pre>
+                        <li>To install MkDocs, run the following command from the command line:
+                            <pre><code>pip install mkdocs
+                </code></pre>
                         </li>
-                        <li>
-                            <p>After the theme is installed, edit your <code>mkdocs.yml</code> file and set the theme name to
-                                <code>dracula</code>:</p>
+                    </ul>
+                    <p><strong>Installation theme</strong></p>
+                    <ul>
+                        <li>Install the theme using PIP:
+                            <pre><code>pip install mkdocs-dracula-theme
+                </code></pre>
+                        </li>
+                    </ul>
+                    <p><strong>Activating theme</strong></p>
+                    <ul>
+                        <li>After the theme is installed, edit your <code>mkdocs.yml</code> file and set the theme name to
+                            <code>dracula</code>:
                             <pre><code>theme:
-    name: dracula</code></pre>
+        name: dracula
+                </code></pre>
                         </li>
                     </ul>
                     <p>All instructions can be found at <a href="https://draculatheme.com/mkdocs">draculatheme.com/mkdocs</a>.</p>
@@ -173,10 +212,20 @@
                 </article>
             </section>
             <!-- endblock -->
+
+            <!-- block footer -->
+            <footer>
+                <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
+                    <a href="https://github.com/dracula/mkdocs" target="_blank"
+                        class="drac-anchor drac-text-black drac-text-purple--hover">
+                        Made with Dracula Theme for MkDocs
+                    </a>
+                </div>
+            </footer>
+            <!-- endblock -->
         </div>
 
-    </div>
-    </div>
+    </main>
 
     <script src="assets/js/jquery-3.3.1.slim.min.js"></script>
     <script src="assets/js/bootstrap.bundle.min.js"></script>
