@@ -42,26 +42,34 @@
 
 <body class="drac-bg-black-secondary drac-text-white drac-text drac-scrollbar-purple">
 
-    <div class="d-flex">
+    <main class="d-flex">
         {%- block sidebar %}
             {% include "/modules/sidebar.html" %}
         {%- endblock %}
 
         <nav class="divider drac-bg-purple-cyan"></nav>
 
-        <div id="content">
-            <header>
-                {%- block header %}
-                    {% include "/modules/header.html" %}
-                {%- endblock %}
-            </header>
+        <div class="content">
+            <!-- block header -->
+            {%- block header %}
+                {% include "/modules/header.html" %}
+            {%- endblock %}
+            <!-- endblock -->
 
+            <!-- block content -->
             {%- block content %}
                 {% include "/modules/content.html" %}
             {%- endblock %}
+            <!-- endblock -->
+
+            <!-- block footer -->
+            {%- block footer %}
+                {% include "/modules/footer.html" %}
+            {%- endblock %}
+            <!-- endblock -->
         </div>
 
-    </div>
+    </main>
 
     <script src="{{ 'assets/js/jquery-3.3.1.slim.min.js"'|url }}"></script>
     <script src="{{ 'assets/js/bootstrap.bundle.min.js"'|url }}"></script>
