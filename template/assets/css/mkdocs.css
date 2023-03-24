@@ -30,20 +30,23 @@ article {
     padding-right: 5%;
 }
 
-table,
-th,
-td {
-    border-collapse: collapse !important;
+table, td, th {
     border-color: var(--greySecondary) !important;
-    border: 1px solid;
-    width: 100% !important;
+    padding-right: 15px !important;
+    border-width: 1px;
+    border-style: solid;
     padding: 1%;
+}
+
+table {
+    width: 100%;
 }
 
 h1,
 h2,
 h3,
-h4 {
+h4
+ {
     margin-top: 1.8rem !important;
 }
 
