@@ -1,8 +1,20 @@
 {%- block next_prev %}
     {%- if page and (page.next_page or page.previous_page) %}
-        <a rel="prev" {% if page.previous_page %}href="{{ page.previous_page.url|url }}" class="nav-link"{% else %}class="nav-link disabled"{% endif %}>
-            <i class="fa fa-arrow-left"></i> Previous</a>
-        <a rel="next" {% if page.next_page %}href="{{ page.next_page.url|url }}" class="nav-link"{% else %}class="nav-link disabled"{% endif %} style="padding-left: 3%;">
-            Next <i class="fa fa-arrow-right"></i></a>
+    <div class="container">
+        <div class="row row-preview">
+            <div class="col">
+                <a {% if page.previous_page %}href="{{ page.previous_page.url|url }}"
+                   class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover"{% else %}
+                   class="btn-preview drac-btn drac-text-white--hover disabled"{% endif %}>
+                    <i class="fa fa-arrow-left"></i> Previous</a>
+            </div>
+            <div class="col">
+                <a {% if page.next_page %}href="{{ page.next_page.url|url }}"
+                   class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover"{% else %}
+                   class="btn-preview drac-btn drac-text-white--hover disabled"{% endif %} style="padding-left: 3%;">
+                    Next <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
     {%- endif %}
 {%- endblock %}

@@ -7,21 +7,27 @@
             <span class="navbar-toggler-icon"></span>
         </button> -->
 
-        {%- block preview %}
-            {% include "/modules/preview.html" %}
-        {%- endblock %}
-
         <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
             <ul class="navbar-nav">
+
+                <!-- block preview -->
+                <li class="nav-item">
+                    {%- block preview %}
+                        {% include "/modules/preview.html" %}
+                    {%- endblock %}
+                </li>
+                <!--  endblock -->
+
                 <!-- block source -->
                 <li class="nav-item">
                     {% if config.repo_url %}
-                    {% if config.repo_name != 'GitHub' %}
-                    {% include "modules/source.html" %}
-                    {% endif %}
+                        {% if config.repo_name != 'GitHub' %}
+                            {% include "modules/source.html" %}
+                        {% endif %}
                     {% endif %}
                 </li>
                 <!--  endblock -->
+
             </ul>
         </div>
         </div>
