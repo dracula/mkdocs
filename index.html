@@ -22,7 +22,7 @@
 
 </head>
 
-<body class="drac-bg-black-secondary drac-text-white drac-text drac-scrollbar-purple">
+<body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
 
     <main class="d-flex">
             <nav id="sidebar" class="sidebar drac-bg-black">
@@ -62,17 +62,17 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="." class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="." class=" active  drac-anchor drac-text drac-text-white drac-text-purple--hover">
                     Home
                 </a>
             </li>
             <li class="drac-box">
-                <a href="nav/getting-started/" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="nav/getting-started/" class=" drac-anchor drac-text drac-text-white drac-text-purple--hover">
                     Getting Started
                 </a>
             </li>
             <li class="drac-box">
-                <a href="nav/release-notes/" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="nav/release-notes/" class=" drac-anchor drac-text drac-text-white drac-text-purple--hover">
                     Release Notes
                 </a>
             </li>
@@ -93,21 +93,37 @@
             aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button> -->
-            
-        <a rel="prev" class="nav-link disabled">
-            <i class="fa fa-arrow-left"></i> Previous</a>
-        <a rel="next" href="nav/getting-started/" class="nav-link" style="padding-left: 3%;">
-            Next <i class="fa fa-arrow-right"></i></a>
 
         <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
             <ul class="navbar-nav">
+
+                <!-- block preview -->
+                <li class="nav-item">
+                        
+    <div class="container">
+        <div class="row row-preview">
+            <div class="col">
+                <a 
+                   class="btn-preview drac-btn drac-text-white--hover disabled">
+                    <i class="fa fa-arrow-left"></i> Previous</a>
+            </div>
+            <div class="col">
+                <a href="nav/getting-started/"
+                   class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                    Next <i class="fa fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+                </li>
+                <!--  endblock -->
+
                 <!-- block source -->
                 <li class="nav-item">
                     
-                    
-                    <div class="md-source source-detail">
+                        
+                            <div class="md-source source-detail">
     <div class="md-source-repo-icon">
-        <i class="fa fa-github-alt" aria-hidden="true"></i>
+        <i class="fa fa-github-alt drac-text-white" aria-hidden="true"></i>
     </div>
 
     <div class="md-source-repo-url">
@@ -118,19 +134,19 @@
 
         <ul class="md-source-repo-text">
             <li>
-                <i class="fa fa-tag" aria-hidden="true"></i>
+                <i class="fa fa-tag drac-text-black" aria-hidden="true"></i>
                 <img alt="GitHub tag (latest by date)"
                     src="https://img.shields.io/github/v/tag/dracula/mkdocs?color=white&label=%20&style=flat-square">
             </li>
 
             <li>
-                <i class="fa fa-star" aria-hidden="true"></i>
+                <i class="fa fa-star drac-text-black" aria-hidden="true"></i>
                 <img alt="GitHub Repo stars"
                     src="https://img.shields.io/github/stars/dracula/mkdocs?color=white&label=%20&style=flat-square">
             </li>
 
             <li>
-                <i class="fa fa-code-fork" aria-hidden="true"></i>
+                <i class="fa fa-code-fork drac-text-black" aria-hidden="true"></i>
                 <img alt="GitHub forks"
                     src="https://img.shields.io/github/forks/dracula/mkdocs?color=white&label=%20&style=flat-square">
             </li>
@@ -138,10 +154,11 @@
     </div>
 
 </div>
-                    
+                        
                     
                 </li>
                 <!--  endblock -->
+
             </ul>
         </div>
         </div>
