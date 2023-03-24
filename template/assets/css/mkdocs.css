@@ -157,6 +157,10 @@ pre {
     transition: all 0.3s;
 }
 
+.content-not-found {
+    padding-top: 7px !important;
+}
+
 /* ===== endblock ===== */
 
 .dot-ul {
