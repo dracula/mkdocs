@@ -5,7 +5,7 @@
             <!-- <p>Not implemented!</p> -->
         {%- else %}
             <li class="drac-box">
-                <a href="{{ nav_item.url|url }}" class="drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="{{ nav_item.url|url }}" class="{% if nav_item.active %} active {% endif %} drac-anchor drac-text drac-text-white drac-text-purple--hover">
                     {{ nav_item.title }}
                 </a>
             </li>
