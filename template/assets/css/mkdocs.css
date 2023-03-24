@@ -1,5 +1,6 @@
 a {
     color: var(--white);
+    text-decoration: none;
 }
 
 a:hover {
@@ -225,3 +226,19 @@ pre {
     margin-left: auto;
     margin-right: auto;
   }
+
+.btn-preview {
+    width: 170px;
+}
+
+.btn-preview:disabled {
+    width: 170px;
+}
+
+.btn-preview:hover {
+    border-color: var(--green);
+}
+
+.row-preview {
+    padding: 5px;
+}
