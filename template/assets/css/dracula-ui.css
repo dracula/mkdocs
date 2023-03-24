@@ -2078,6 +2078,10 @@ code {
     --accentColor: var(--greySecondary);
     background-color: var(--greySecondary);
 }
+.drac-bg-grey-ternary {
+    --accentColor: var(--greyTernary);
+    background-color: var(--greyTernary);
+}
 .drac-bg-grey-transparent {
     --accentColor: var(--grey-transparent);
     background-color: var(--grey-transparent);
@@ -2087,6 +2091,10 @@ code {
 }
 .drac-text-grey-secondary {
     color: var(--greySecondary);
+}
+
+.drac-text-grey-ternary {
+    color: var(--greyTernary);
 }
 .drac-glow-grey {
     --glowColor: var(--grey);
