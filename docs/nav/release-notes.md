@@ -2,6 +2,14 @@
 
 ---
 
+## v1.0.3
+
+- [📦 PyPI: Build 1.0.3](https://github.com/dracula/mkdocs/releases/tag/v1.0.3)
+- [📘 DOCS: Update]()
+- [⚙️ FEATURE: Update CSS]()
+- [⚙️ FEATURE: Update Screenshot]()
+
+
 ## v1.0.2
 
 - [📦 PyPI: Build 1.0.2](https://github.com/dracula/mkdocs/releases/tag/v1.0.2)
