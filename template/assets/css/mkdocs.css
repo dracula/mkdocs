@@ -194,7 +194,7 @@ img, svg {
     transition: all 0.3s;
 }
 
-.content-not-found {
+.section-content {
     padding-top: 7px !important;
 }
 
@@ -403,6 +403,11 @@ img, svg {
     article {
         padding-left: 10%;
         padding-right: 10%;
+    }
+
+    .section-content {
+        padding-top: 7px !important;
+        padding-bottom: 20% !important;
     }
 
 }
