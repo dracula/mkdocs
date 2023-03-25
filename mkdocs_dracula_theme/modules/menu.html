@@ -1,11 +1,26 @@
 {%- if nav|length>1 %}
     {%- for nav_item in nav %}
         {%- if nav_item.children %}
-            <!-- TODO: Make a submenu to open more pages. -->
-            <!-- <p>Not implemented!</p> -->
+            <li class="drac-box">
+                <a href="{{ nav_item.url|url }}"
+                    class="{% if nav_item.active %} active {% endif %}
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#{{ nav_item.title.replace(" ","-").lower() }}-collapse" aria-expanded="false">
+                    {{ nav_item.title }}
+                </a>
+                <div class="collapse" id="{{ nav_item.title.replace(" ","-").lower() }}-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                        {%- for nav_item in nav_item.children %}
+                            {% include "modules/dropdown-menu.html" %}
+                        {%- endfor %}
+                    </ul>
+                </div>
+            </li>
         {%- else %}
             <li class="drac-box">
-                <a href="{{ nav_item.url|url }}" class="{% if nav_item.active %} active {% endif %} drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="{{ nav_item.url|url }}"
+                    class="{% if nav_item.active %} active {% endif %}
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     {{ nav_item.title }}
                 </a>
             </li>
