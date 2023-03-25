@@ -18,6 +18,14 @@
                 </li>
                 <!--  endblock -->
 
+                <!-- block search -->
+                <li class="nav-item">
+                    {%- block search_button %}
+                        {%- if 'search' in config['plugins'] %}{%- include "searchbox.html" %}{%- endif %}
+                    {%- endblock %}
+                </li>
+                <!--  endblock -->
+
                 <!-- block source -->
                 <li class="nav-item">
                     {% if config.repo_url %}
