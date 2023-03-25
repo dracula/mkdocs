@@ -12,11 +12,12 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         {% if page and page.is_homepage %}<meta name="description" content="{{ config['site_description'] }}">{% endif %}
-        {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
         {% if page and page.canonical_url %}<link rel="canonical" href="{{ page.canonical_url }}">{% endif %}
+        {% if config.site_author %}<meta name="author" content="{{ config.site_author }}">{% endif %}
     {%- endblock %}
 
     {%- block styles %}
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|url }}">
         <link rel="stylesheet" href="{{ 'assets/css/dracula-ui.css'|url }}">
@@ -26,23 +27,33 @@
             <link href="{{ path }}" rel="stylesheet">
         {%- endfor %}
 
-        {%- for path in extra_javascript %}
-            <script src="{{ path }}"></script>
-        {%- endfor %}
+        {% if config.theme.favicon %}
+            <link  rel="icon" type="image/x-icon" href="{{ config.theme.favicon|url }}">
+        {% else %}
+            <link  rel="icon" type="image/x-icon" href="{{ 'assets/img/favicon.ico'|url }}">
+        {% endif %}
 
     {%- endblock %}
 
-    {% if config.theme.favicon %}
-        <link  rel="icon" type="image/x-icon" href="{{ config.theme.favicon|url }}">
-    {% else %}
-        <link  rel="icon" type="image/x-icon" href="{{ 'assets/img/favicon.ico'|url }}">
-    {% endif %}
+    {%- block libs %}
+
+        {%- if config.theme.highlightjs %}
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+
+            {%- for lang in config.theme.hljs_languages %}
+                <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/{{lang}}.min.js"></script>
+            {%- endfor %}
+                <script>hljs.initHighlightingOnLoad();</script>
+        {%- endif %}
+
+    {%- endblock %}
 
 </head>
 
 <body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
 
     <main class="d-flex">
+
         {%- block sidebar %}
             {% include "/modules/sidebar.html" %}
         {%- endblock %}
@@ -72,11 +83,19 @@
     </main>
 
     {%- block scripts %}
+
+        <script>var base_url = '{{ base_url }}';</script>
         <script src="{{ 'assets/js/jquery-3.3.1.slim.min.js"'|url }}"></script>
         <script src="{{ 'assets/js/bootstrap.bundle.min.js"'|url }}"></script>
         <script src="{{ 'assets/js/mkdocs.js"'|url }}"></script>
+
+        {%- for path in extra_javascript %}
+			<script src="{{ path }}" defer></script>
+        {%- endfor %}
+
     {%- endblock %}
 
 </body>
 
 </html>
+
