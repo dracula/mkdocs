@@ -30,7 +30,9 @@ article {
     padding-right: 5%;
 }
 
-table, td, th {
+table,
+td,
+th {
     border-color: var(--greySecondary) !important;
     padding-right: 15px !important;
     border-width: 1px;
@@ -45,8 +47,7 @@ table {
 h1,
 h2,
 h3,
-h4
- {
+h4 {
     margin-top: 1.8rem !important;
 }
 
@@ -345,6 +346,14 @@ h4
 }
 
 @media only screen and (max-width: 780px) {
+
+    .sidebar ul li a {
+        padding: 1%;
+        font-size: 15px !important;
+        margin-top: 1% !important;
+        margin-bottom: 8% !important;
+    }
+
     .site-name {
         font-size: 14px !important;
     }
@@ -393,6 +402,55 @@ h4
 }
 
 .search-box {
-    margin-top: 1%;
+    margin-top: 2%;
     margin-bottom: 1%;
+}
+
+.btn-toggle {
+    color: var(--white) !important;
+    background-color: transparent;
+    display: inline-flex !important;
+    text-decoration: none;
+    transition: all 0.16s ease-in-out;
+}
+
+.btn-toggle:hover,
+.btn-toggle:focus {
+    color: var(--purple) !important;
+    background: var(--black) !important;
+}
+
+.btn-toggle::after {
+    width: 1.25em;
+    line-height: 0;
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+    transition: transform .35s ease;
+    transform-origin: .5em 50%;
+    margin-left: 10px;
+}
+
+[data-bs-theme="dark"] .btn-toggle::after {
+    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28255,255,255,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+}
+
+.btn-toggle[aria-expanded="true"] {
+    color: rgba(var(--bs-emphasis-color-rgb), .85);
+}
+
+.btn-toggle[aria-expanded="true"]::after {
+    transform: rotate(90deg);
+}
+
+.drac-anchor-secondary {
+    margin-left: 10%;
+}
+
+.drac-box-ternary {
+    margin-top: 3%;
+    margin-left: 10%;
+}
+
+.drac-input-search {
+    margin-top: 2px;
+    width: 170px;
 }

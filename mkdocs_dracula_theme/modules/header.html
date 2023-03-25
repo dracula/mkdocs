@@ -1,43 +1,44 @@
 <header>
     <nav class="navbar navbar-expand-xl drac-bg-purple"">
-        <div class=" container-fluid">
+        <div class="container-fluid">
 
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
 
-        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-            <ul class="navbar-nav">
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
 
-                <!-- block preview -->
-                <li class="nav-item">
-                    {%- block preview %}
-                        {% include "/modules/preview.html" %}
-                    {%- endblock %}
-                </li>
-                <!--  endblock -->
+                    <!-- block preview -->
+                    <li class="nav-item">
+                        {%- block preview %}
+                            {% include "/modules/preview.html" %}
+                        {%- endblock %}
+                    </li>
+                    <!--  endblock -->
 
-                <!-- block search -->
-                <li class="nav-item">
-                    {%- block search_button %}
-                        {%- if 'search' in config['plugins'] %}{%- include "searchbox.html" %}{%- endif %}
-                    {%- endblock %}
-                </li>
-                <!--  endblock -->
+                    <!-- block search -->
+                    <li class="nav-item">
+                        {%- block search_button %}
+                            {%- if 'search' in config['plugins'] %}{%- include "searchbox.html" %}{%- endif %}
+                        {%- endblock %}
+                    </li>
+                    <!--  endblock -->
 
-                <!-- block source -->
-                <li class="nav-item">
-                    {% if config.repo_url %}
-                        {% if config.repo_name != 'GitHub' %}
-                            {% include "modules/source.html" %}
+                    <!-- block source -->
+                    <li class="nav-item">
+                        {% if config.repo_url %}
+                            {% if config.repo_name != 'GitHub' %}
+                                {% include "modules/source.html" %}
+                            {% endif %}
                         {% endif %}
-                    {% endif %}
-                </li>
-                <!--  endblock -->
+                    </li>
+                    <!--  endblock -->
 
-            </ul>
-        </div>
+                </ul>
+            </div>
+
         </div>
     </nav>
 </header>
