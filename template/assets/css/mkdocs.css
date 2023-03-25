@@ -51,6 +51,18 @@ h4 {
     margin-top: 1.8rem !important;
 }
 
+img, svg {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.logo {
+    display: block;
+    margin-bottom: 10%;
+    width: 150px !important;
+}
+
 /* ===== Siderbar ===== */
 .sidebar {
     min-width: 270px;
@@ -246,12 +258,6 @@ h4 {
     min-width: 10px !important;
     flex-shrink: 0;
     width: 1.5rem;
-}
-
-.logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 }
 
 .btn-preview {
