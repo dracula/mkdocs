@@ -8,22 +8,27 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         <meta name="description" content="None">
-        
         <link rel="canonical" href="https://www.fernandocelmer.com/">
+        
+
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <link rel="stylesheet" href="assets/css/dracula-ui.css">
         <link rel="stylesheet" href="assets/css/mkdocs.css">
 
-    
-        <link  rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
-    
+        
+            <link  rel="icon" type="image/x-icon" href="assets/img/favicon.ico">
+        
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+                <script>hljs.initHighlightingOnLoad();</script>
 
 </head>
 
 <body class="drac-bg-black-secondary drac-text-grey-ternary drac-text drac-scrollbar-purple">
 
     <main class="d-flex">
+
+        <!-- block sidebar -->
             <nav id="sidebar" class="sidebar drac-bg-black">
     <div class="custom-menu">
         <button type="button" id="sidebarCollapse" class="btn btn-primary">
@@ -61,24 +66,52 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="." class=" active  drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="."
+                    class=" active 
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Home
                 </a>
             </li>
             <li class="drac-box">
-                <a href="nav/getting-started/" class=" drac-anchor drac-text drac-text-white drac-text-purple--hover">
+                <a href="nav/getting-started/"
+                    class="
+                    drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Getting Started
                 </a>
             </li>
             <li class="drac-box">
-                <a href="nav/release-notes/" class=" drac-anchor drac-text drac-text-white drac-text-purple--hover">
-                    Release Notes
+                <a href="."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
+                    Development
                 </a>
+                <div class="collapse" id="development-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="nav/development/development-guide/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Development Guide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="nav/development/release-notes/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Release Notes
+        </a>
+    </li>
+                    </ul>
+                </div>
             </li>
         </ul>
         <!-- endblock -->
     </div>
 </nav>
+        <!-- endblock -->
 
         <nav class="divider drac-bg-purple-cyan"></nav>
 
@@ -86,41 +119,53 @@
             <!-- block header -->
                 <header>
     <nav class="navbar navbar-expand-xl drac-bg-purple"">
-        <div class=" container-fluid">
+        <div class="container-fluid">
 
-        <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
-            aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button> -->
+            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+                aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button> -->
 
-        <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-            <ul class="navbar-nav">
+            <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
+                <ul class="navbar-nav">
 
-                <!-- block preview -->
-                <li class="nav-item">
-                        
-    <div class="container">
-        <div class="row row-preview">
-            <div class="col">
-                <a 
-                   class="btn-preview drac-btn drac-text-white--hover disabled">
-                    <i class="fa fa-arrow-left"></i> Previous</a>
-            </div>
-            <div class="col">
-                <a href="nav/getting-started/"
-                   class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
-                    Next <i class="fa fa-arrow-right"></i></a>
+                    <!-- block preview -->
+                    <li class="nav-item">
+                            
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a 
+                        class="btn-preview drac-btn drac-text-white--hover disabled">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="nav/getting-started/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
             </div>
         </div>
-    </div>
-                </li>
-                <!--  endblock -->
+                    </li>
+                    <!--  endblock -->
 
-                <!-- block source -->
-                <li class="nav-item">
-                    
+                    <!-- block search -->
+                    <li class="nav-item"><div role="search" class="search-box">
+	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
+		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
+		placeholder="Search docs" title="Type search term here" />
+	</form>
+</div>
+                    </li>
+                    <!--  endblock -->
+
+                    <!-- block source -->
+                    <li class="nav-item">
                         
-                            <div class="md-source source-detail">
+                            
+                                <div class="md-source source-detail">
     <div class="md-source-repo-icon">
         <i class="fa fa-github-alt drac-text-white" aria-hidden="true"></i>
     </div>
@@ -153,20 +198,21 @@
     </div>
 
 </div>
+                            
                         
-                    
-                </li>
-                <!--  endblock -->
+                    </li>
+                    <!--  endblock -->
 
-            </ul>
-        </div>
+                </ul>
+            </div>
+
         </div>
     </nav>
 </header>
             <!-- endblock -->
 
             <!-- block content -->
-                <section class="p-md-5" style="padding-top: 7px !important;">
+                <section class="p-md-5 section-content">
     <article>
         <p><h1 id="dracula-for-mkdocs">Dracula for <a href="https://www.mkdocs.org/">Mkdocs</a></h1>
 <hr />
@@ -236,7 +282,7 @@
                 <footer>
     <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
         <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
-            class="drac-anchor drac-text-black drac-text-purple--hover">
+            class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
             Made with Dracula Theme for MkDocs
         </a>
     </div>
@@ -245,9 +291,12 @@
         </div>
 
     </main>
+
+        <script>var base_url = '.';</script>
         <script src="assets/js/jquery-3.3.1.slim.min.js""></script>
         <script src="assets/js/bootstrap.bundle.min.js""></script>
         <script src="assets/js/mkdocs.js""></script>
+			<script src="search/main.js" defer></script>
 
 </body>
 

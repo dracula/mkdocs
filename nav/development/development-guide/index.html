@@ -2,22 +2,22 @@
 <html lang="en">
 
 <head>
-        <title>Dracula Theme Mkdocs</title>
+        <title>Development Guide - Dracula Theme Mkdocs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         
-        
+        <link rel="canonical" href="https://www.fernandocelmer.com/nav/development/development-guide/">
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="/assets/css/mkdocs.css">
+        <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../../../assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="../../../assets/css/mkdocs.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="../../../assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -39,7 +39,7 @@
 
     <div class="p-4">
         
-            <img class="logo" src="/assets/img/dracula.png" height="150px">
+            <img class="logo" src="../../../assets/img/dracula.png" height="150px">
         
 
         <div class="drac-text-center">
@@ -66,22 +66,22 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="/."
+                <a href="../../.."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Home
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/nav/getting-started/"
+                <a href="../../getting-started/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Getting Started
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/."
-                    class="
+                <a href="../../.."
+                    class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
                     Development
@@ -90,15 +90,15 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="/nav/development/development-guide/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Development Guide
         </a>
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="/nav/development/release-notes/"
+        <a href="../release-notes/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Release Notes
@@ -132,12 +132,28 @@
                     <!-- block preview -->
                     <li class="nav-item">
                             
+        <div class="container">
+            <div class="row row-preview">
+                <div class="col">
+                    <a href="../../getting-started/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
+                        <i class="fa fa-arrow-left"></i> Previous
+                    </a>
+                </div>
+                <div class="col">
+                    <a href="../release-notes/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
+                        Next <i class="fa fa-arrow-right"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
                     </li>
                     <!--  endblock -->
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="//search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="../../../search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -196,15 +212,24 @@
             <!-- endblock -->
 
             <!-- block content -->
-    <section class="p-md-5 section-content">
-        <article>
-            <p></p>
-            <h1>404</h1>
-            <hr>
-            <p><strong>Page not found</strong></p>
-        </article>
-    </section>
-
+                <section class="p-md-5 section-content">
+    <article>
+        <p><h1 id="development-guide">Development Guide</h1>
+<hr />
+<h2 id="commit-style">Commit Style</h2>
+<ul>
+<li>⚙️ FEATURE</li>
+<li>📝 PEP8</li>
+<li>📌 ISSUE</li>
+<li>🪲 BUG</li>
+<li>📘 DOCS</li>
+<li>📦 PyPI</li>
+<li>❤️️ TEST</li>
+<li>⬆️ CI/CD</li>
+<li>⚠️ SECURITY</li>
+</ul></p>
+    </article>
+</section>
             <!-- endblock -->
 
             <!-- block footer -->
@@ -221,11 +246,11 @@
 
     </main>
 
-        <script>var base_url = '/';</script>
-        <script src="/assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="/assets/js/bootstrap.bundle.min.js""></script>
-        <script src="/assets/js/mkdocs.js""></script>
-			<script src="/search/main.js" defer></script>
+        <script>var base_url = '../../..';</script>
+        <script src="../../../assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="../../../assets/js/bootstrap.bundle.min.js""></script>
+        <script src="../../../assets/js/mkdocs.js""></script>
+			<script src="../../../search/main.js" defer></script>
 
 </body>
 

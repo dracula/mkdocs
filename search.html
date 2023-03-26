@@ -12,12 +12,12 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-        <link rel="stylesheet" href="/assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="/assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="/assets/css/mkdocs.css">
+        <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
+        <link rel="stylesheet" href="./assets/css/dracula-ui.css">
+        <link rel="stylesheet" href="./assets/css/mkdocs.css">
 
         
-            <link  rel="icon" type="image/x-icon" href="/assets/img/favicon.ico">
+            <link  rel="icon" type="image/x-icon" href="./assets/img/favicon.ico">
         
             <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
                 <script>hljs.initHighlightingOnLoad();</script>
@@ -39,7 +39,7 @@
 
     <div class="p-4">
         
-            <img class="logo" src="/assets/img/dracula.png" height="150px">
+            <img class="logo" src="./assets/img/dracula.png" height="150px">
         
 
         <div class="drac-text-center">
@@ -66,21 +66,21 @@
         <ul class="mb-5 drac-list drac-list-none">
             
             <li class="drac-box">
-                <a href="/."
+                <a href="./."
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Home
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/nav/getting-started/"
+                <a href="./nav/getting-started/"
                     class="
                     drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
                     Getting Started
                 </a>
             </li>
             <li class="drac-box">
-                <a href="/."
+                <a href="./."
                     class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
@@ -90,7 +90,7 @@
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="/nav/development/development-guide/"
+        <a href="./nav/development/development-guide/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Development Guide
@@ -98,7 +98,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="/nav/development/release-notes/"
+        <a href="./nav/development/release-notes/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Release Notes
@@ -137,7 +137,7 @@
 
                     <!-- block search -->
                     <li class="nav-item"><div role="search" class="search-box">
-	<form id="rtd-search-form" class="wy-form" action="//search.html" method="get">
+	<form id="rtd-search-form" class="wy-form" action="./search.html" method="get">
 		<input type="text" name="q" class="drac-input drac-input-search drac-input-white drac-text-white drac-bg-black-secondary"
 		placeholder="Search docs" title="Type search term here" />
 	</form>
@@ -196,14 +196,24 @@
             <!-- endblock -->
 
             <!-- block content -->
-    <section class="p-md-5 section-content">
-        <article>
-            <p></p>
-            <h1>404</h1>
-            <hr>
-            <p><strong>Page not found</strong></p>
-        </article>
-    </section>
+	<section class="p-md-5 content-search">
+		<article>
+			<p></p>
+			<h1 id="search">Search Results</h1>
+			<hr>
+
+			<form id="content_search" action="search.html">
+				<span role="status" aria-live="polite" class="ui-helper-hidden-accessible"></span>
+				<input name="q" id="mkdocs-search-query" type="text" class="drac-input drac-input-purple drac-text-white search_input search-query ui-autocomplete-input"
+					placeholder="Search the Docs" autocomplete="off" autofocus title="Type search term here">
+			</form>
+			
+			<div id="mkdocs-search-results" class="search-results" data-no-results-text="No results found">
+				Searching...
+			</div>
+
+		</article>
+	</section>
 
             <!-- endblock -->
 
@@ -221,11 +231,11 @@
 
     </main>
 
-        <script>var base_url = '/';</script>
-        <script src="/assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="/assets/js/bootstrap.bundle.min.js""></script>
-        <script src="/assets/js/mkdocs.js""></script>
-			<script src="/search/main.js" defer></script>
+        <script>var base_url = '.';</script>
+        <script src="./assets/js/jquery-3.3.1.slim.min.js""></script>
+        <script src="./assets/js/bootstrap.bundle.min.js""></script>
+        <script src="./assets/js/mkdocs.js""></script>
+			<script src="./search/main.js" defer></script>
 
 </body>
 
