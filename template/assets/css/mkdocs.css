@@ -13,6 +13,12 @@ footer {
     width: 100%;
 }
 
+.footer-text {
+    font-size: 14px !important;
+    margin-top: 0rem !important;
+    margin-bottom: 0rem !important;
+}
+
 code {
     background-color: var(--black);
 }
@@ -408,6 +414,12 @@ img, svg {
     .section-content {
         padding-top: 7px !important;
         padding-bottom: 20% !important;
+    }
+
+    .footer-text {
+        font-size: 12px !important;
+        margin-top: 0rem !important;
+        margin-bottom: 0rem !important;
     }
 
 }
