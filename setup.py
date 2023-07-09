@@ -30,7 +30,7 @@ setup(
         "Programming Language :: Python :: 3.11",
     ],
     install_requires=[
-        'mkdocs>=1.4.2'
+        'mkdocs>=1.4.3'
     ],
     packages=["mkdocs_dracula_theme"],
     package_data={'mkdocs_dracula_theme': ['*','*/*','*/*/*']},
