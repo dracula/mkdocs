@@ -6,34 +6,40 @@
 
 ## Install
 
-**Installation MkDocs**
+### Installation MkDocs
 
-- To install MkDocs, run the following command from the command line:
+To install MkDocs, run the following command from the command line:
 
-        pip install mkdocs
+```bash
+pip install mkdocs
+```
 
-**Installation theme**
+### Installation theme
 
-- Install the theme using PIP:
+Install the theme using PIP:
 
-        pip install mkdocs-dracula-theme
+```bash
+pip install mkdocs-dracula-theme
+```
 
-**Activating theme**
+### Activating theme
 
-- After the theme is installed, edit your `mkdocs.yml` file and set the theme name to `dracula`:
+After the theme is installed, edit your `mkdocs.yml` file and set the theme name to `dracula`:
 
-        theme:
-            name: dracula
+```yml
+theme:
+    name: dracula
+```
 
 All instructions can be found at [draculatheme.com/mkdocs](https://draculatheme.com/mkdocs).
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/foobar/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/mkdocs/graphs/contributors).
 
-| [![Fernando Celmer](https://github.com/FernandoCelmer.png?size=100)](https://github.com/FernandoCelmer) |
-| ---------------------------------------------------------------------------------------- |
-| [Fernando Celmer](https://github.com/FernandoCelmer)                                          |
+| [![Fernando Celmer](https://github.com/FernandoCelmer.png?size=100)](https://github.com/FernandoCelmer) |                                               |
+| ------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [Fernando Celmer](https://github.com/FernandoCelmer)                                                    | [Lautaro Linquimán](https://github.com/Ymil)  |
 
 ## Community
 
