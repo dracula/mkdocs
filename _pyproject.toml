@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "base-mkdocs-dracula-theme"
+version = "1.0.5"
+description = "Dark theme for Mkdocs"
+authors = ["FernandoCelmer <email@fernandocelmer.com>"]
+license = "MIT"
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+mkdocs = "^1.5.3"
+mkdocs-dracula-theme = "^1.0.5"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

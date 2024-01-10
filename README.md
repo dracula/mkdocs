@@ -35,11 +35,11 @@ All instructions can be found at [draculatheme.com/mkdocs](https://draculatheme.
 
 ## Team
 
-This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/foobar/graphs/contributors).
+This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/mkdocs/graphs/contributors).
 
-| [![Fernando Celmer](https://github.com/FernandoCelmer.png?size=100)](https://github.com/FernandoCelmer) |
-| ---------------------------------------------------------------------------------------- |
-| [Fernando Celmer](https://github.com/FernandoCelmer)                                          |
+| [![Fernando Celmer](https://github.com/FernandoCelmer.png?size=100)](https://github.com/FernandoCelmer) |                                               |
+| ------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
+| [Fernando Celmer](https://github.com/FernandoCelmer)                                                    | [Lautaro Linquimán](https://github.com/Ymil)  |
 
 ## Community
 
