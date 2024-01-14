@@ -47,6 +47,15 @@ This theme is maintained by the following person(s) and a bunch of [awesome cont
 - [GitHub](https://github.com/dracula/dracula-theme/discussions) - Best for asking questions and discussing issues.
 - [Discord](https://draculatheme.com/discord-invite) - Best for hanging out with the community.
 
+## Getting Help
+
+We use GitHub issues for tracking bugs and feature requests and have limited bandwidth to address them. If you need anything, I ask you to please follow our templates for opening issues or discussions.
+
+- [🐛 Bug Report](https://github.com/dracula/mkdocs/issues/new/choose)
+- [📕 Documentation Issue](https://github.com/dracula/mkdocs/issues/new/choose)
+- [🚀 Feature Request](https://github.com/dracula/mkdocs/issues/new/choose)
+- [💬 General Question](https://github.com/dracula/mkdocs/issues/new/choose)
+
 ## Commit Style
 
 - ⚙️ FEATURE
