@@ -1,8 +1,8 @@
 name: "🐛 Bug Report"
 description: Report a bug
 title: "(short issue description)"
-labels: [bug]
-assignees: []
+labels: [bug, pending]
+assignees: [FernandoCelmer]
 body:
   - type: textarea
     id: description
