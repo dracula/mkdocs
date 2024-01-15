@@ -18,11 +18,17 @@
 
     {%- block styles %}
 
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/{{config.theme.hljs_theme|default('atom-one-dark.min.css')}}">
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        {%- if config.theme.highlight_css %}
+            <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/styles/{{config.theme.highlight_css|default('atom-one-dark.min.css')}}">
+        {% else %}
+            <link rel="stylesheet" href="{{ 'assets/css/darcula-highlight.min.css'|url }}">
+        {%- endif %}
+
         <link rel="stylesheet" href="{{ 'assets/css/bootstrap.min.css'|url }}">
-        <link rel="stylesheet" href="{{ 'assets/css/dracula-ui.css'|url }}">
-        <link rel="stylesheet" href="{{ 'assets/css/mkdocs.css'|url }}">
+        <link rel="stylesheet" href="{{ 'assets/css/dracula-ui.min.css'|url }}">
+        <link rel="stylesheet" href="{{ 'assets/css/mkdocs.min.css'|url }}">
 
         {%- for path in extra_css %}
             <link href="{{ path }}" rel="stylesheet">
@@ -39,7 +45,7 @@
     {%- block libs %}
 
         {%- if config.theme.highlightjs %}
-            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/highlight.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/{{config.theme.highlight_js|default('highlight.min.js')}}"></script>
 
             {%- for lang in config.theme.hljs_languages %}
                 <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.5.0/languages/{{lang}}.min.js"></script>
@@ -101,4 +107,3 @@
 </body>
 
 </html>
-

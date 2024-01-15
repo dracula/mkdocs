@@ -15,3 +15,5 @@ theme:
   name: dracula
   logo: assets/img/dracula.png
   favicon: assets/img/favicon.ico
+  # highlight_js: highlight.min.js
+  # highlight_css: atom-one-dark.min.css
