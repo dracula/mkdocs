@@ -10,7 +10,7 @@
 
 To install MkDocs, run the following command from the command line:
 
-```bash
+```
 pip install mkdocs
 ```
 
@@ -18,7 +18,7 @@ pip install mkdocs
 
 Install the theme using PIP:
 
-```bash
+```
 pip install mkdocs-dracula-theme
 ```
 
