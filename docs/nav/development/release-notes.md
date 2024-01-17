@@ -4,7 +4,7 @@
 
 ## v1.0.7
 
-- [📦 PyPI: Build 1.0.7](https://github.com/dracula/mkdocs/releases/tag/v1.0.7) `2024-01-15`
+- [📦 PyPI: Build 1.0.7](https://github.com/dracula/mkdocs/releases/tag/v1.0.7) `2024-01-17`
 - [📌 ISSUE-13: No syntax highlighting in code blocks](https://github.com/dracula/mkdocs/issues/13)
 
 ## v1.0.6

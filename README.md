@@ -37,7 +37,7 @@ All instructions can be found at [draculatheme.com/mkdocs](https://draculatheme.
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/mkdocs/graphs/contributors).
 
-| [![Fernando Celmer](https://github.com/FernandoCelmer.png?size=100)](https://github.com/FernandoCelmer) |                                               |
+| [![Fernando Celmer](https://github.com/FernandoCelmer.png?size=100)](https://github.com/FernandoCelmer) | [![Lautaro Linquimán](https://github.com/Ymil.png?size=100)](https://github.com/Ymil) |
 | ------------------------------------------------------------------------------------------------------- | --------------------------------------------- |
 | [Fernando Celmer](https://github.com/FernandoCelmer)                                                    | [Lautaro Linquimán](https://github.com/Ymil)  |
 
