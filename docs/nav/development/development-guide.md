@@ -10,13 +10,17 @@
 python -m venv venv
 ```
 
+#### Activation environment
+
 - Activate the virtual environment.
 
 ```bash
 source venv/bin/activate
 ```
 
-- Install the requirements.
+#### Install the requirements.
+
+- Install the necessary requirements to be able to test the application.
 
 ```bash
 pip install -r requirements.txt --no-cache-dir
