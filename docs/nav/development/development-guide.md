@@ -18,7 +18,7 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-#### Install the requirements.
+#### Install the requirements
 
 - Install the necessary requirements to be able to test the application.
 
