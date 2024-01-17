@@ -10,7 +10,7 @@
 python -m venv venv
 ```
 
-#### Activation environment
+#### Environment activation
 
 - Activate the virtual environment.
 
@@ -51,7 +51,9 @@ python scripts/install_local.py
 mkdocs serve
 ```
 
-Now you can access the [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
+#### View Template
+
+- Now you can access the [http://127.0.0.1:8000/](http://127.0.0.1:8000/)
 
 ---
 
