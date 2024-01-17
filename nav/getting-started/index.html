@@ -12,9 +12,11 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../assets/css/darcula-highlight.min.css">
+
         <link rel="stylesheet" href="../../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="../../assets/css/mkdocs.css">
+        <link rel="stylesheet" href="../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../assets/css/mkdocs.min.css">
 
         
             <link  rel="icon" type="image/x-icon" href="../../assets/img/favicon.ico">
@@ -83,6 +85,26 @@
                 <a href="../.."
                     class="
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false">
+                    Settings
+                </a>
+                <div class="collapse" id="settings-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../settings/custom-highlight/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Custom Highlight
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
                     Development
                 </a>
@@ -118,16 +140,16 @@
         <div class="content">
             <!-- block header -->
                 <header>
-    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
         <div class="container-fluid">
-
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
                 aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
 
             <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-md-center">
 
                     <!-- block preview -->
                     <li class="nav-item">
@@ -141,7 +163,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../development/development-guide/"
+                    <a href="../settings/custom-highlight/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -216,24 +238,27 @@
     <article>
         <p><h1 id="getting-started">Getting Started</h1>
 <hr />
-<p><strong>Installation MkDocs</strong></p>
+<h4 id="installation-mkdocs">Installation MkDocs</h4>
 <ul>
-<li>To install MkDocs, run the following command from the command line:<pre><code>pip install mkdocs
-</code></pre>
-</li>
+<li>To install MkDocs, run the following command from the command line:</li>
 </ul>
-<p><strong>Installation theme</strong></p>
-<ul>
-<li>Install the theme using PIP:<pre><code>pip install mkdocs-dracula-theme
+<pre><code class="language-bash">pip install mkdocs
 </code></pre>
-</li>
-</ul>
-<p><strong>Activating theme</strong></p>
+<h4 id="installation-theme">Installation theme</h4>
 <ul>
-<li>After the theme is installed, edit your <code>mkdocs.yml</code> file and set the theme name to <code>dracula</code>:<pre><code>theme:
+<li>Install the theme using PIP:</li>
+</ul>
+<pre><code class="language-bash">pip install mkdocs-dracula-theme
+</code></pre>
+<h4 id="activating-theme">Activating theme</h4>
+<ul>
+<li>After the theme is installed, edit your <code>mkdocs.yml</code> file and set the theme name to <code>dracula</code>:</li>
+</ul>
+<pre><code class="language-yml">theme:
     name: dracula
 </code></pre>
-</li>
+<ul>
+<li>All instructions can be found at <a href="https://draculatheme.com/mkdocs">draculatheme.com/mkdocs</a>.</li>
 </ul></p>
     </article>
 </section>
@@ -254,9 +279,9 @@
     </main>
 
         <script>var base_url = '../..';</script>
-        <script src="../../assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="../../assets/js/bootstrap.bundle.min.js""></script>
-        <script src="../../assets/js/mkdocs.js""></script>
+        <script src="../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../assets/js/mkdocs.js"></script>
 			<script src="../../search/main.js" defer></script>
 
 </body>

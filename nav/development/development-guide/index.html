@@ -12,9 +12,11 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../../assets/css/darcula-highlight.min.css">
+
         <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../../assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="../../../assets/css/mkdocs.css">
+        <link rel="stylesheet" href="../../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../../assets/css/mkdocs.min.css">
 
         
             <link  rel="icon" type="image/x-icon" href="../../../assets/img/favicon.ico">
@@ -81,6 +83,26 @@
             </li>
             <li class="drac-box">
                 <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false">
+                    Settings
+                </a>
+                <div class="collapse" id="settings-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../settings/custom-highlight/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Custom Highlight
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
                     class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
@@ -118,16 +140,16 @@
         <div class="content">
             <!-- block header -->
                 <header>
-    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
         <div class="container-fluid">
-
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
                 aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
 
             <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-md-center">
 
                     <!-- block preview -->
                     <li class="nav-item">
@@ -135,7 +157,7 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../../getting-started/"
+                    <a href="../../settings/custom-highlight/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
@@ -215,6 +237,47 @@
                 <section class="p-md-5 section-content">
     <article>
         <p><h1 id="development-guide">Development Guide</h1>
+<h2 id="how-to-test-the-local-package">How to test the local package?</h2>
+<h4 id="virtual-environment">Virtual environment</h4>
+<ul>
+<li>Create your virtual environment.</li>
+</ul>
+<pre><code class="language-bash">python -m venv venv
+</code></pre>
+<h4 id="environment-activation">Environment activation</h4>
+<ul>
+<li>Activate the virtual environment.</li>
+</ul>
+<pre><code class="language-bash">source venv/bin/activate
+</code></pre>
+<h4 id="install-the-requirements">Install the requirements</h4>
+<ul>
+<li>Install the necessary requirements to be able to test the application.</li>
+</ul>
+<pre><code class="language-bash">pip install -r requirements.txt --no-cache-dir
+</code></pre>
+<h4 id="development">Development</h4>
+<ul>
+<li>Make your changes as desired in the <code>./mkdocs_dracula_theme</code> folder. You can enjoy and change whatever you want, please have fun.</li>
+</ul>
+<pre><code class="language-bash">ls mkdocs_dracula_theme
+</code></pre>
+<h4 id="build-and-install">Build and Install</h4>
+<ul>
+<li>Run the script that creates and installs the local package.</li>
+</ul>
+<pre><code class="language-bash">python scripts/install_local.py
+</code></pre>
+<h4 id="test">Test</h4>
+<ul>
+<li>Run the following command to run the server.</li>
+</ul>
+<pre><code class="language-bash">mkdocs serve
+</code></pre>
+<h4 id="view-template">View Template</h4>
+<ul>
+<li>Now you can access the <a href="http://127.0.0.1:8000/">http://127.0.0.1:8000/</a></li>
+</ul>
 <hr />
 <h2 id="commit-style">Commit Style</h2>
 <ul>
@@ -247,9 +310,9 @@
     </main>
 
         <script>var base_url = '../../..';</script>
-        <script src="../../../assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="../../../assets/js/bootstrap.bundle.min.js""></script>
-        <script src="../../../assets/js/mkdocs.js""></script>
+        <script src="../../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../assets/js/mkdocs.js"></script>
 			<script src="../../../search/main.js" defer></script>
 
 </body>

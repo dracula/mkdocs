@@ -12,9 +12,11 @@
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+            <link rel="stylesheet" href="../../../assets/css/darcula-highlight.min.css">
+
         <link rel="stylesheet" href="../../../assets/css/bootstrap.min.css">
-        <link rel="stylesheet" href="../../../assets/css/dracula-ui.css">
-        <link rel="stylesheet" href="../../../assets/css/mkdocs.css">
+        <link rel="stylesheet" href="../../../assets/css/dracula-ui.min.css">
+        <link rel="stylesheet" href="../../../assets/css/mkdocs.min.css">
 
         
             <link  rel="icon" type="image/x-icon" href="../../../assets/img/favicon.ico">
@@ -81,6 +83,26 @@
             </li>
             <li class="drac-box">
                 <a href="../../.."
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false">
+                    Settings
+                </a>
+                <div class="collapse" id="settings-collapse">
+                    <ul class="mb-5 drac-list drac-list-none">
+                            
+    <li class="drac-box-ternary">
+        <a href="../../settings/custom-highlight/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Custom Highlight
+        </a>
+    </li>
+                    </ul>
+                </div>
+            </li>
+            <li class="drac-box">
+                <a href="../../.."
                     class=" active 
                     drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
                     data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
@@ -118,16 +140,16 @@
         <div class="content">
             <!-- block header -->
                 <header>
-    <nav class="navbar navbar-expand-xl drac-bg-purple"">
+    <nav class="navbar navbar-expand-xl drac-bg-purple">
         <div class="container-fluid">
-
-            <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
+            
+            <button class="navbar-toggler w-100 text-center" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsMenu"
                 aria-controls="navbarsMenu" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
-            </button> -->
+            </button>
 
             <div class="collapse navbar-collapse flex-column ml-auto" id="navbarsMenu">
-                <ul class="navbar-nav">
+                <ul class="navbar-nav text-md-center">
 
                     <!-- block preview -->
                     <li class="nav-item">
@@ -216,9 +238,14 @@
     <article>
         <p><h1 id="release-notes">Release Notes</h1>
 <hr />
+<h2 id="v107">v1.0.7</h2>
+<ul>
+<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.7">📦 PyPI: Build 1.0.7</a> <code>2024-01-17</code></li>
+<li><a href="https://github.com/dracula/mkdocs/issues/13">📌 ISSUE-13: No syntax highlighting in code blocks</a></li>
+</ul>
 <h2 id="v106">v1.0.6</h2>
 <ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.5">📦 PyPI: Build 1.0.6</a> <code>2024-01-09</code></li>
+<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.6">📦 PyPI: Build 1.0.6</a> <code>2024-01-09</code></li>
 <li><a href="https://github.com/dracula/mkdocs/issues/17">📌 ISSUE-17: Fix: hidden navbar toggler button</a></li>
 </ul>
 <h2 id="v105">v1.0.5</h2>
@@ -276,9 +303,9 @@
     </main>
 
         <script>var base_url = '../../..';</script>
-        <script src="../../../assets/js/jquery-3.3.1.slim.min.js""></script>
-        <script src="../../../assets/js/bootstrap.bundle.min.js""></script>
-        <script src="../../../assets/js/mkdocs.js""></script>
+        <script src="../../../assets/js/jquery-3.3.1.slim.min.js"></script>
+        <script src="../../../assets/js/bootstrap.bundle.min.js"></script>
+        <script src="../../../assets/js/mkdocs.js"></script>
 			<script src="../../../search/main.js" defer></script>
 
 </body>
