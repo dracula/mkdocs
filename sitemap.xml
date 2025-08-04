@@ -1,28 +1,27 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>https://www.fernandocelmer.com/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://draculatheme.com/mkdocs/</loc>
+         <lastmod>2025-08-04</lastmod>
     </url>
     <url>
-         <loc>https://www.fernandocelmer.com/nav/getting-started/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://draculatheme.com/mkdocs/nav/getting-started/</loc>
+         <lastmod>2025-08-04</lastmod>
     </url>
     <url>
-         <loc>https://www.fernandocelmer.com/nav/development/development-guide/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://draculatheme.com/mkdocs/nav/development/development-guide/</loc>
+         <lastmod>2025-08-04</lastmod>
     </url>
     <url>
-         <loc>https://www.fernandocelmer.com/nav/development/release-notes/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://draculatheme.com/mkdocs/nav/development/release-notes/</loc>
+         <lastmod>2025-08-04</lastmod>
     </url>
     <url>
-         <loc>https://www.fernandocelmer.com/nav/settings/custom-highlight/</loc>
-         <lastmod>2024-01-17</lastmod>
-         <changefreq>daily</changefreq>
+         <loc>https://draculatheme.com/mkdocs/nav/settings/custom-highlight/</loc>
+         <lastmod>2025-08-04</lastmod>
+    </url>
+    <url>
+         <loc>https://draculatheme.com/mkdocs/nav/settings/favicon/</loc>
+         <lastmod>2025-08-04</lastmod>
     </url>
 </urlset>
