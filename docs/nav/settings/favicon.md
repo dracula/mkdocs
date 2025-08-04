@@ -1,4 +1,4 @@
-# Icon
+# Favicon
 
 ## Changing the favicon
 

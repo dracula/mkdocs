@@ -8,7 +8,7 @@ nav:
     - Home: index.md
     - Getting Started: nav/getting-started.md
     - Settings:
-      - nav/settings/icon.md
+      - nav/settings/favicon.md
       - nav/settings/custom-highlight.md
     - Development:
       - nav/development/development-guide.md

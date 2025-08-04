@@ -33,6 +33,13 @@ theme:
 
 All instructions can be found at [draculatheme.com/mkdocs](https://draculatheme.com/mkdocs).
 
+### Changing the favicon
+
+```yml
+theme:
+  favicon: assets/favicon.ico
+```
+
 ## Team
 
 This theme is maintained by the following person(s) and a bunch of [awesome contributors](https://github.com/dracula/mkdocs/graphs/contributors).
