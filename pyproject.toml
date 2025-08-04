@@ -1,6 +1,6 @@
 [project]
 name = "mkdocs-dracula-theme"
-version = "1.0.5"
+version = "1.0.8-dev1"
 authors = [
   { name="Fernando Celmer", email="email@fernandocelmer.com" },
 ]
@@ -36,7 +36,7 @@ Changelog = "https://dracula.github.io/mkdocs/nav/development/release-notes"
 
 [tool.poetry]
 name = "mkdocs-dracula-theme"
-version = "1.0.5"
+version = "1.0.8-dev1"
 description = "Dark theme for Mkdocs"
 authors = ["Fernando Celmer <email@fernandocelmer.com>"]
 license = "MIT"
