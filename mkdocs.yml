@@ -1,23 +1,23 @@
 site_name: Dracula Theme Mkdocs
 repo_name: dracula/mkdocs
 repo_url: https://github.com/dracula/mkdocs
-site_url: https://www.fernandocelmer.com/
+site_url: https://draculatheme.com/mkdocs
 copyright: Fernando Celmer
 
 nav:
     - Home: index.md
     - Getting Started: nav/getting-started.md
     - Settings:
+      - nav/settings/icon.md
       - nav/settings/custom-highlight.md
     - Development:
       - nav/development/development-guide.md
       - nav/development/release-notes.md
 
-
 theme:
   name: dracula
   logo: assets/img/dracula.png
-  favicon: assets/img/favicon.ico
+  favicon: assets/favicon.ico
   # highlight_js: highlight.min.js
   # highlight_css: atom-one-dark.min.css
   # highlight_css: github.min.css

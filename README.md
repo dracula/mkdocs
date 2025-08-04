@@ -54,6 +54,7 @@ We use GitHub issues for tracking bugs and feature requests and have limited ban
 - 🐛 [Bug Report](https://github.com/dracula/mkdocs/issues/new/choose)
 - 📕 [Documentation Issue](https://github.com/dracula/mkdocs/issues/new/choose)
 - 🚀 [Feature Request](https://github.com/dracula/mkdocs/issues/new/choose)
+- ⚠️ [Security Request](https://github.com/dracula/mkdocs/issues/new/choose)
 - 💬 [General Question](https://github.com/dracula/mkdocs/issues/new/choose)
 
 ## Commit Style
