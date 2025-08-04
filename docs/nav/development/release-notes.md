@@ -2,6 +2,14 @@
 
 ---
 
+## v1.0.8
+
+- [📦 PyPI: Build 1.0.8](https://github.com/dracula/mkdocs/releases/tag/v1.0.8) `2025-08-04`
+- [⬆️ CI/CD: Security Request](https://github.com/dracula/mkdocs/commit/31bdb3b8c0eda04c105508841918b735844ae405)
+- [⚙️ FEATURE: Updated package settings](https://github.com/dracula/mkdocs/commit/b1ea0e34e28d328337637964465cf1fb75001bdb)
+- [📘 DOCS: Updated icon documentation](https://github.com/dracula/mkdocs/commit/51760578028219b155725021f4072ea3dedb5da5)
+- [📘 DOCS: Updated](https://github.com/dracula/mkdocs/commit/120cad804848781236b95687aba4141390d497c9)
+
 ## v1.0.7
 
 - [📦 PyPI: Build 1.0.7](https://github.com/dracula/mkdocs/releases/tag/v1.0.7) `2024-01-17`
