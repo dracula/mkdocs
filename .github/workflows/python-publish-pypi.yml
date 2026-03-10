@@ -61,13 +61,13 @@ jobs:
       - name: 📝 Update __init__.py
         run: |
           VERSION="${{ steps.extract_version.outputs.version }}"
-          sed -i "s/^__version__ = \".*\"/__version__ = \"$VERSION\"/" mkdocs_simple_blog/__init__.py
+          sed -i "s/^__version__ = \".*\"/__version__ = \"$VERSION\"/" mkdocs_dracula_theme/__init__.py
 
       - name: 💾 Commit and push
         run: |
           git config --local user.email "action@github.com"
           git config --local user.name "GitHub Action"
-          git add LAST_VERSION pyproject.toml mkdocs_simple_blog/__init__.py
+          git add LAST_VERSION pyproject.toml mkdocs_dracula_theme/__init__.py
           if git diff --staged --quiet; then
             echo "No changes to commit"
           else
@@ -115,7 +115,7 @@ jobs:
           echo "Expected version: $EXPECTED"
           echo "LAST_VERSION: $(cat LAST_VERSION)"
           echo "pyproject.toml: $(grep '^version = ' pyproject.toml | head -1)"
-          echo "__init__.py: $(grep '^__version__ = ' mkdocs_simple_blog/__init__.py)"
+          echo "__init__.py: $(grep '^__version__ = ' mkdocs_dracula_theme/__init__.py)"
 
           if [ "$(cat LAST_VERSION)" != "$EXPECTED" ]; then
             echo "ERROR: Version mismatch!"
