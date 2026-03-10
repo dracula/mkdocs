@@ -1,2 +1,0 @@
-mkdocs==1.5.3
-mkdocs-dracula-theme==1.0.7

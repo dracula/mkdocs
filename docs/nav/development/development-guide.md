@@ -18,13 +18,31 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-#### Install the requirements
+#### Install Poetry
 
-- Install the necessary requirements to be able to test the application.
+- Install Poetry for dependency management and building.
 
 ```bash
-pip install -r requirements.txt --no-cache-dir
+pip install poetry
 ```
+
+Or using the official installer:
+
+```bash
+curl -sSL https://install.python-poetry.org | python3 -
+```
+
+#### Install dependencies with Poetry
+
+- Install project dependencies using Poetry.
+
+```bash
+poetry install
+```
+
+This will install:
+- `mkdocs` (>=1.6.1,<2.0.0) - Main dependency
+- `build` (^1.3.0) - Development dependency for building packages
 
 #### Development
 
@@ -34,18 +52,27 @@ pip install -r requirements.txt --no-cache-dir
 ls mkdocs_dracula_theme
 ```
 
-#### Build and Install
+The `poetry install` command installs the package in editable mode, so your changes will be reflected immediately without needing to rebuild.
 
-- Run the script that creates and installs the local package.
+#### Build package (optional)
 
+- If you want to build the distribution package:
 
 ```bash
-python scripts/install_local.py
+poetry build
 ```
+
+This creates distribution files in the `dist/` directory.
 
 #### Test
 
-- Run the following command to run the server.
+- Run the following command to start the development server.
+
+```bash
+poetry run mkdocs serve
+```
+
+Or if you're already in the Poetry environment:
 
 ```bash
 mkdocs serve

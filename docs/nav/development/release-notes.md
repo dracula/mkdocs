@@ -2,6 +2,11 @@
 
 ---
 
+## v1.0.9
+
+- [📦 PyPI: Build 1.0.9](https://github.com/dracula/mkdocs/releases/tag/v1.0.9) `2026-03-09`
+- [📌 ISSUE-26: Fix contrast issue with expand toggles](https://github.com/dracula/mkdocs/issues/26)
+
 ## v1.0.8
 
 - [📦 PyPI: Build 1.0.8](https://github.com/dracula/mkdocs/releases/tag/v1.0.8) `2025-08-04`
