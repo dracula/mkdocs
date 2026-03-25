@@ -8,3 +8,5 @@ search_index_only: false
 
 highlightjs: true
 hljs_languages: []
+
+show_footer: true
