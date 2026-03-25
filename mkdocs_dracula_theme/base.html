@@ -84,7 +84,9 @@
 
             <!-- block footer -->
             {%- block footer %}
-                {% include "/modules/footer.html" %}
+                {% if config.theme.show_footer %}
+                    {% include "/modules/footer.html" %}
+                {% endif %}
             {%- endblock %}
             <!-- endblock -->
         </div>
