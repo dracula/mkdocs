@@ -527,7 +527,7 @@ img, svg {
 /* tip / hint / important */
 .admonition.tip,.admonition.hint,.admonition.important { border-color: var(--green); background: var(--green-transparent); }
 .admonition.tip .admonition-title,.admonition.hint .admonition-title,.admonition.important .admonition-title { background: rgba(138,255,128,.15); color: var(--green); }
-.admonition.tip .admonition-title::before,.admonition.hint .admonition-title::before,.admonition.important .admonition-title::before { content: "\f06d"; }
+.admonition.tip .admonition-title::before,.admonition.hint .admonition-title::before,.admonition.important .admonition-title::before { content: "\f0eb"; }
 
 /* success / check / done */
 .admonition.success,.admonition.check,.admonition.done { border-color: var(--green); background: var(--green-transparent); }
