@@ -1,0 +1,35 @@
+name: 🧪 Tests
+
+on:
+  pull_request:
+    branches: ["main", "master", "develop"]
+  workflow_dispatch:
+  workflow_call:
+
+jobs:
+  test:
+    name: Run Tests
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        python-version: ["3.9", "3.10", "3.11", "3.12", "3.13"]
+
+    steps:
+      - name: 📥 Checkout code
+        uses: actions/checkout@v4
+
+      - name: 📦 Setup Poetry
+        uses: ./.github/actions/setup-poetry
+        with:
+          python-version: ${{ matrix.python-version }}
+          install-deps: dev
+
+      - name: 🧪 Run tests with pytest and coverage
+        run: |
+          poetry run pytest tests/ -v --tb=short --cov=mkdocs_dracula_theme --cov-report=xml --cov-report=term-missing
+
+      - name: ✅ Test Summary
+        if: always()
+        run: |
+          echo "### Tests Completed ✅" >> $GITHUB_STEP_SUMMARY
+          echo "Python Version: ${{ matrix.python-version }}" >> $GITHUB_STEP_SUMMARY
