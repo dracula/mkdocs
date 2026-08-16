@@ -36,14 +36,14 @@ runs:
         path: |
           .venv
           ~/.cache/pypoetry
-        key: ${{ runner.os }}-poetry-${{ hashFiles('**/poetry.lock') }}
+        key: ${{ runner.os }}-poetry-${{ inputs.python-version }}-${{ hashFiles('**/poetry.lock') }}
         restore-keys: |
-          ${{ runner.os }}-poetry-
+          ${{ runner.os }}-poetry-${{ inputs.python-version }}-
 
     - name: 🔒 Update lock file if needed
       shell: bash
       run: |
-        poetry lock --no-update || true
+        poetry lock --no-update 2>/dev/null || poetry lock
 
     - name: ⚙️ Install dependencies
       if: inputs.install-deps != ''
