@@ -2,13 +2,13 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-        <title>Release Notes - Dracula Theme Mkdocs</title>
+        <title>Show footer - Dracula Theme Mkdocs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         
-        <link rel="canonical" href="https://draculatheme.com/mkdocs/nav/development/release-notes/">
+        <link rel="canonical" href="https://draculatheme.com/mkdocs/nav/settings/show-footer/">
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -83,16 +83,16 @@
             </li>
             <li class="drac-box">
                 <a href="../../.."
-                    class="
-                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false">
+                    class=" active 
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover"
+                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="true">
                     Settings
                 </a>
-                <div class="collapse" id="settings-collapse">
+                <div class="collapse show" id="settings-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../../settings/favicon/"
+        <a href="../favicon/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Favicon
@@ -100,7 +100,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../settings/custom-highlight/"
+        <a href="../custom-highlight/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Custom Highlight
@@ -108,8 +108,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../../settings/show-footer/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Show footer
         </a>
@@ -119,16 +119,16 @@
             </li>
             <li class="drac-box">
                 <a href="../../.."
-                    class=" active 
-                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover"
-                    data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="true">
+                    class="
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
+                    data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
                     Development
                 </a>
-                <div class="collapse show" id="development-collapse">
+                <div class="collapse" id="development-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
-        <a href="../development-guide/"
+        <a href="../../development/development-guide/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Development Guide
@@ -136,7 +136,7 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../component-showcase/"
+        <a href="../../development/component-showcase/"
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Component Showcase
@@ -144,8 +144,8 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../../development/release-notes/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Release Notes
         </a>
@@ -181,14 +181,14 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../component-showcase/"
+                    <a href="../custom-highlight/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a 
-                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
+                    <a href="../../development/development-guide/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -260,75 +260,13 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="release-notes">Release Notes</h1>
-<hr />
-<h2 id="v110">v1.1.0</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.1.0">📦 PyPI: Build 1.1.0</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/28">⚙️ FEATURE-#28: Add <code>show_footer</code> option to hide the theme footer</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/29">⚙️ FEATURE-#29: Add admonition styles with Dracula colors and Font Awesome icons</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/34">⬆️ CI/CD-#34: Gate PyPI releases on automated tests and code quality checks</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/36">🪲 BUG-#36: Fix sidebar chevron color and submenu alignment</a></li>
-</ul>
-<h2 id="v109">v1.0.9</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.9">📦 PyPI: Build 1.0.9</a> <code>2026-03-09</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/26">📌 ISSUE-26: Fix contrast issue with expand toggles</a></li>
-</ul>
-<h2 id="v108">v1.0.8</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.8">📦 PyPI: Build 1.0.8</a> <code>2025-08-04</code></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/31bdb3b8c0eda04c105508841918b735844ae405">⬆️ CI/CD: Security Request</a></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/b1ea0e34e28d328337637964465cf1fb75001bdb">⚙️ FEATURE: Updated package settings</a></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/51760578028219b155725021f4072ea3dedb5da5">📘 DOCS: Updated icon documentation</a></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/120cad804848781236b95687aba4141390d497c9">📘 DOCS: Updated</a></li>
-</ul>
-<h2 id="v107">v1.0.7</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.7">📦 PyPI: Build 1.0.7</a> <code>2024-01-17</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/13">📌 ISSUE-13: No syntax highlighting in code blocks</a></li>
-</ul>
-<h2 id="v106">v1.0.6</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.6">📦 PyPI: Build 1.0.6</a> <code>2024-01-09</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/17">📌 ISSUE-17: Fix: hidden navbar toggler button</a></li>
-</ul>
-<h2 id="v105">v1.0.5</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.5">📦 PyPI: Build 1.0.5</a> <code>2023-07-09</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/14">📌 ISSUE-14: Update MkDocs version to 1.4.3</a></li>
-</ul>
-<h2 id="v104">v1.0.4</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.4">📦 PyPI: Build 1.0.4</a> <code>2023-03-25</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/5">📌 ISSUE-5: Create dropdown menu in sidebar</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/4">📌 ISSUE-4: Implement option to search contents</a></li>
-</ul>
-<h2 id="v103">v1.0.3</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.3">📦 PyPI: Build 1.0.3</a> <code>2023-03-24</code></li>
-<li><a href="">📘 DOCS: Update</a></li>
-<li><a href="">⚙️ FEATURE: Update CSS</a></li>
-<li><a href="">⚙️ FEATURE: Update Screenshot</a></li>
-</ul>
-<h2 id="v102">v1.0.2</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.2">📦 PyPI: Build 1.0.2</a> <code>2023-03-24</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/8">📌 ISSUE-8: Create 404 page</a></li>
-<li><a href="">⚙️ FEATURE: Update CSS</a></li>
-<li><a href="">⚙️ FEATURE: Update Screenshot</a></li>
-<li><a href="">⚙️ FEATURE: Design improvement</a></li>
-<li><a href="">⚙️ FEATURE: Update page view module</a></li>
-</ul>
-<h2 id="v101">v1.0.1</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.1">📦 PyPI: Build 1.0.1</a> <code>2023-03-23</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/1">📌 ISSUE-1: Standardization of rep</a></li>
-</ul>
-<h2 id="v100">v1.0.0</h2>
-<ul>
-<li><a href="https://github.com/FernandoCelmer/mkdocs-dracula-theme/releases/tag/v1.0.0">📦 PyPI: Build 1.0.0</a> <code>2023-03-22</code></li>
-</ul></p>
+        <p><h1 id="show-footer">Show footer</h1>
+<h2 id="hiding-the-made-with-dracula-theme-for-mkdocs-footer">Hiding the "Made with Dracula Theme for MkDocs" footer</h2>
+<pre><code class="language-yml">theme:
+  name: dracula
+  show_footer: false
+</code></pre>
+<p>Defaults to <code>true</code>.</p></p>
     </article>
 </section>
             <!-- endblock -->

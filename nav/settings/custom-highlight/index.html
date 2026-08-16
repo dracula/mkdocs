@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
         <title>Custom Highlight - Dracula Theme Mkdocs</title>
@@ -84,11 +84,11 @@
             <li class="drac-box">
                 <a href="../../.."
                     class=" active 
-                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="false">
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover"
+                    data-bs-toggle="collapse" data-bs-target="#settings-collapse" aria-expanded="true">
                     Settings
                 </a>
-                <div class="collapse" id="settings-collapse">
+                <div class="collapse show" id="settings-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
@@ -104,6 +104,14 @@
             class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Custom Highlight
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../show-footer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Show footer
         </a>
     </li>
                     </ul>
@@ -124,6 +132,14 @@
             class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Development Guide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../development/component-showcase/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Component Showcase
         </a>
     </li>
                             
@@ -171,7 +187,7 @@
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../../development/development-guide/"
+                    <a href="../show-footer/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -269,7 +285,8 @@
             <!-- endblock -->
 
             <!-- block footer -->
-                <footer>
+                
+                    <footer>
     <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
         <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
             class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
@@ -277,6 +294,7 @@
         </a>
     </div>
 </footer>
+                
             <!-- endblock -->
         </div>
 

@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 
 <head>
         <title>Development Guide - Dracula Theme Mkdocs</title>
@@ -106,17 +106,25 @@
             Custom Highlight
         </a>
     </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../../settings/show-footer/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Show footer
+        </a>
+    </li>
                     </ul>
                 </div>
             </li>
             <li class="drac-box">
                 <a href="../../.."
                     class=" active 
-                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover collapsed"
-                    data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="false">
+                    drac-anchor btn-toggle d-inline-flex align-items-center border-0 drac-text-purple--hover"
+                    data-bs-toggle="collapse" data-bs-target="#development-collapse" aria-expanded="true">
                     Development
                 </a>
-                <div class="collapse" id="development-collapse">
+                <div class="collapse show" id="development-collapse">
                     <ul class="mb-5 drac-list drac-list-none">
                             
     <li class="drac-box-ternary">
@@ -124,6 +132,14 @@
             class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Development Guide
+        </a>
+    </li>
+                            
+    <li class="drac-box-ternary">
+        <a href="../component-showcase/"
+            class="
+            drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
+            Component Showcase
         </a>
     </li>
                             
@@ -165,13 +181,13 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../../settings/custom-highlight/"
+                    <a href="../../settings/show-footer/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a href="../release-notes/"
+                    <a href="../component-showcase/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
@@ -258,28 +274,45 @@
 </ul>
 <pre><code class="language-bash">source venv/bin/activate
 </code></pre>
-<h4 id="install-the-requirements">Install the requirements</h4>
+<h4 id="install-poetry">Install Poetry</h4>
 <ul>
-<li>Install the necessary requirements to be able to test the application.</li>
+<li>Install Poetry for dependency management and building.</li>
 </ul>
-<pre><code class="language-bash">pip install -r requirements.txt --no-cache-dir
+<pre><code class="language-bash">pip install poetry
 </code></pre>
+<p>Or using the official installer:</p>
+<pre><code class="language-bash">curl -sSL https://install.python-poetry.org | python3 -
+</code></pre>
+<h4 id="install-dependencies-with-poetry">Install dependencies with Poetry</h4>
+<ul>
+<li>Install project dependencies using Poetry.</li>
+</ul>
+<pre><code class="language-bash">poetry install
+</code></pre>
+<p>This will install:
+- <code>mkdocs</code> (&gt;=1.6.1,&lt;2.0.0) - Main dependency
+- <code>build</code> (^1.3.0) - Development dependency for building packages</p>
 <h4 id="development">Development</h4>
 <ul>
 <li>Make your changes as desired in the <code>./mkdocs_dracula_theme</code> folder. You can enjoy and change whatever you want, please have fun.</li>
 </ul>
 <pre><code class="language-bash">ls mkdocs_dracula_theme
 </code></pre>
-<h4 id="build-and-install">Build and Install</h4>
+<p>The <code>poetry install</code> command installs the package in editable mode, so your changes will be reflected immediately without needing to rebuild.</p>
+<h4 id="build-package-optional">Build package (optional)</h4>
 <ul>
-<li>Run the script that creates and installs the local package.</li>
+<li>If you want to build the distribution package:</li>
 </ul>
-<pre><code class="language-bash">python scripts/install_local.py
+<pre><code class="language-bash">poetry build
 </code></pre>
+<p>This creates distribution files in the <code>dist/</code> directory.</p>
 <h4 id="test">Test</h4>
 <ul>
-<li>Run the following command to run the server.</li>
+<li>Run the following command to start the development server.</li>
 </ul>
+<pre><code class="language-bash">poetry run mkdocs serve
+</code></pre>
+<p>Or if you're already in the Poetry environment:</p>
 <pre><code class="language-bash">mkdocs serve
 </code></pre>
 <h4 id="view-template">View Template</h4>
@@ -304,7 +337,8 @@
             <!-- endblock -->
 
             <!-- block footer -->
-                <footer>
+                
+                    <footer>
     <div class="d-flex flex-sm-row justify-content-between py-2 border-top drac-text-black drac-bg-cyan-green">
         <a href="https://github.com/dracula/mkdocs" target="_blank" style="padding-left: 1%;"
             class="footer-text drac-anchor drac-text-black drac-text-purple--hover">
@@ -312,6 +346,7 @@
         </a>
     </div>
 </footer>
+                
             <!-- endblock -->
         </div>
 

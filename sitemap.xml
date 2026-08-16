@@ -2,26 +2,34 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
          <loc>https://draculatheme.com/mkdocs/</loc>
-         <lastmod>2025-08-04</lastmod>
+         <lastmod>2026-08-16</lastmod>
     </url>
     <url>
          <loc>https://draculatheme.com/mkdocs/nav/getting-started/</loc>
-         <lastmod>2025-08-04</lastmod>
+         <lastmod>2026-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://draculatheme.com/mkdocs/nav/development/component-showcase/</loc>
+         <lastmod>2026-08-16</lastmod>
     </url>
     <url>
          <loc>https://draculatheme.com/mkdocs/nav/development/development-guide/</loc>
-         <lastmod>2025-08-04</lastmod>
+         <lastmod>2026-08-16</lastmod>
     </url>
     <url>
          <loc>https://draculatheme.com/mkdocs/nav/development/release-notes/</loc>
-         <lastmod>2025-08-04</lastmod>
+         <lastmod>2026-08-16</lastmod>
     </url>
     <url>
          <loc>https://draculatheme.com/mkdocs/nav/settings/custom-highlight/</loc>
-         <lastmod>2025-08-04</lastmod>
+         <lastmod>2026-08-16</lastmod>
     </url>
     <url>
          <loc>https://draculatheme.com/mkdocs/nav/settings/favicon/</loc>
-         <lastmod>2025-08-04</lastmod>
+         <lastmod>2026-08-16</lastmod>
+    </url>
+    <url>
+         <loc>https://draculatheme.com/mkdocs/nav/settings/show-footer/</loc>
+         <lastmod>2026-08-16</lastmod>
     </url>
 </urlset>

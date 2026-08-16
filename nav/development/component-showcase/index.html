@@ -2,13 +2,13 @@
 <html lang="en" data-bs-theme="dark">
 
 <head>
-        <title>Release Notes - Dracula Theme Mkdocs</title>
+        <title>Component Showcase - Dracula Theme Mkdocs</title>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
         
-        <link rel="canonical" href="https://draculatheme.com/mkdocs/nav/development/release-notes/">
+        <link rel="canonical" href="https://draculatheme.com/mkdocs/nav/development/component-showcase/">
         
 
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -136,16 +136,16 @@
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="../component-showcase/"
-            class="
+        <a href="./"
+            class=" active 
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Component Showcase
         </a>
     </li>
                             
     <li class="drac-box-ternary">
-        <a href="./"
-            class=" active 
+        <a href="../release-notes/"
+            class="
             drac-anchor d-inline-flex align-items-center border-0 drac-text-purple--hover">
             Release Notes
         </a>
@@ -181,14 +181,14 @@
         <div class="container">
             <div class="row row-preview">
                 <div class="col">
-                    <a href="../component-showcase/"
+                    <a href="../development-guide/"
                         class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover">
                         <i class="fa fa-arrow-left"></i> Previous
                     </a>
                 </div>
                 <div class="col">
-                    <a 
-                        class="btn-preview drac-btn drac-text-white--hover disabled" style="padding-left: 3%;">
+                    <a href="../release-notes/"
+                        class="btn-preview drac-btn drac-btn-outline drac-text-white drac-text-cyan-green--hover" style="padding-left: 3%;">
                         Next <i class="fa fa-arrow-right"></i>
                     </a>
                 </div>
@@ -260,75 +260,173 @@
             <!-- block content -->
                 <section class="p-md-5 section-content">
     <article>
-        <p><h1 id="release-notes">Release Notes</h1>
-<hr />
-<h2 id="v110">v1.1.0</h2>
+        <p><h1 id="component-showcase">Component Showcase</h1>
+<p>This page exercises every themed component using real content about the
+<a href="https://github.com/dracula">Dracula theme</a> project, so visual regressions
+are easy to spot during development.</p>
+<h2 id="what-is-dracula">What is Dracula?</h2>
+<p>Dracula is a dark theme for code editors, terminals, and hundreds of other
+applications, created by <a href="https://github.com/zenorocha">Zeno Rocha</a>. It
+started as a single Sublime Text theme and has since grown into one of the
+most widely ported color schemes in open source.</p>
+<h3 id="design-goals">Design goals</h3>
+<h1 id="a-single-color-scheme-everywhere">A single color scheme, everywhere</h1>
+<h2 id="consistency-across-every-tool-you-use">Consistency across every tool you use</h2>
+<h3 id="from-the-editor-to-the-terminal">From the editor to the terminal</h3>
+<h4 id="from-the-terminal-to-the-browser">From the terminal to the browser</h4>
+<h5 id="from-the-browser-to-your-ide-plugins">From the browser to your IDE plugins</h5>
+<h6 id="down-to-the-smallest-utility-script">Down to the smallest utility script</h6>
+<h2 id="the-philosophy">The philosophy</h2>
+<p>Dracula follows a few simple rules, explained in <strong>bold</strong>, <em>italics</em>,
+<strong><em>bold italics</em></strong>, and even ~~occasionally~~ always with a bit of
+<code>inline code</code> for terms like <code>background</code>, <code>foreground</code>, and <code>selection</code>.</p>
+<p>Read the <a href="https://draculatheme.com/contribute">official spec</a> before
+porting the theme to a new <a href="https://draculatheme.com">application</a>.</p>
+<h2 id="why-people-port-it">Why people port it</h2>
 <ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.1.0">📦 PyPI: Build 1.1.0</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/28">⚙️ FEATURE-#28: Add <code>show_footer</code> option to hide the theme footer</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/29">⚙️ FEATURE-#29: Add admonition styles with Dracula colors and Font Awesome icons</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/34">⬆️ CI/CD-#34: Gate PyPI releases on automated tests and code quality checks</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/36">🪲 BUG-#36: Fix sidebar chevron color and submenu alignment</a></li>
+<li>It looks good on every screen, day or night</li>
+<li>
+<p>It is consistent across dozens of tools</p>
+<ul>
+<li>Editors: VS Code, Vim, Sublime Text</li>
+<li>Terminals: iTerm2, Alacritty, Windows Terminal</li>
+<li>Browsers, IDEs, and even Slack</li>
 </ul>
-<h2 id="v109">v1.0.9</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.9">📦 PyPI: Build 1.0.9</a> <code>2026-03-09</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/26">📌 ISSUE-26: Fix contrast issue with expand toggles</a></li>
+</li>
+<li>
+<p>Pick a base application to port</p>
+</li>
+<li>Follow the official color specification</li>
+<li>Submit the port for review<ol>
+<li>Maintainers check contrast and accuracy</li>
+<li>Once approved, it ships on draculatheme.com</li>
+</ol>
+</li>
 </ul>
-<h2 id="v108">v1.0.8</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.8">📦 PyPI: Build 1.0.8</a> <code>2025-08-04</code></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/31bdb3b8c0eda04c105508841918b735844ae405">⬆️ CI/CD: Security Request</a></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/b1ea0e34e28d328337637964465cf1fb75001bdb">⚙️ FEATURE: Updated package settings</a></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/51760578028219b155725021f4072ea3dedb5da5">📘 DOCS: Updated icon documentation</a></li>
-<li><a href="https://github.com/dracula/mkdocs/commit/120cad804848781236b95687aba4141390d497c9">📘 DOCS: Updated</a></li>
-</ul>
-<h2 id="v107">v1.0.7</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.7">📦 PyPI: Build 1.0.7</a> <code>2024-01-17</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/13">📌 ISSUE-13: No syntax highlighting in code blocks</a></li>
-</ul>
-<h2 id="v106">v1.0.6</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.6">📦 PyPI: Build 1.0.6</a> <code>2024-01-09</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/17">📌 ISSUE-17: Fix: hidden navbar toggler button</a></li>
-</ul>
-<h2 id="v105">v1.0.5</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.5">📦 PyPI: Build 1.0.5</a> <code>2023-07-09</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/14">📌 ISSUE-14: Update MkDocs version to 1.4.3</a></li>
-</ul>
-<h2 id="v104">v1.0.4</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.4">📦 PyPI: Build 1.0.4</a> <code>2023-03-25</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/5">📌 ISSUE-5: Create dropdown menu in sidebar</a></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/4">📌 ISSUE-4: Implement option to search contents</a></li>
-</ul>
-<h2 id="v103">v1.0.3</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.3">📦 PyPI: Build 1.0.3</a> <code>2023-03-24</code></li>
-<li><a href="">📘 DOCS: Update</a></li>
-<li><a href="">⚙️ FEATURE: Update CSS</a></li>
-<li><a href="">⚙️ FEATURE: Update Screenshot</a></li>
-</ul>
-<h2 id="v102">v1.0.2</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.2">📦 PyPI: Build 1.0.2</a> <code>2023-03-24</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/8">📌 ISSUE-8: Create 404 page</a></li>
-<li><a href="">⚙️ FEATURE: Update CSS</a></li>
-<li><a href="">⚙️ FEATURE: Update Screenshot</a></li>
-<li><a href="">⚙️ FEATURE: Design improvement</a></li>
-<li><a href="">⚙️ FEATURE: Update page view module</a></li>
-</ul>
-<h2 id="v101">v1.0.1</h2>
-<ul>
-<li><a href="https://github.com/dracula/mkdocs/releases/tag/v1.0.1">📦 PyPI: Build 1.0.1</a> <code>2023-03-23</code></li>
-<li><a href="https://github.com/dracula/mkdocs/issues/1">📌 ISSUE-1: Standardization of rep</a></li>
-</ul>
-<h2 id="v100">v1.0.0</h2>
-<ul>
-<li><a href="https://github.com/FernandoCelmer/mkdocs-dracula-theme/releases/tag/v1.0.0">📦 PyPI: Build 1.0.0</a> <code>2023-03-22</code></li>
-</ul></p>
+<h2 id="in-the-maintainers-words">In the maintainers' words</h2>
+<blockquote>
+<p>Dracula is not just a theme, it's a community. Every port follows the
+same spec so that switching tools never means switching colors.</p>
+</blockquote>
+<h2 id="the-official-palette">The official palette</h2>
+<pre><code class="language-python">palette = {
+    &quot;background&quot;: &quot;#282A36&quot;,
+    &quot;current_line&quot;: &quot;#44475A&quot;,
+    &quot;foreground&quot;: &quot;#F8F8F2&quot;,
+    &quot;comment&quot;: &quot;#6272A4&quot;,
+    &quot;cyan&quot;: &quot;#8BE9FD&quot;,
+    &quot;green&quot;: &quot;#50FA7B&quot;,
+    &quot;orange&quot;: &quot;#FFB86C&quot;,
+    &quot;pink&quot;: &quot;#FF79C6&quot;,
+    &quot;purple&quot;: &quot;#BD93F9&quot;,
+    &quot;red&quot;: &quot;#FF5555&quot;,
+    &quot;yellow&quot;: &quot;#F1FA8C&quot;,
+}
+</code></pre>
+<h2 id="palette-reference">Palette reference</h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Hex</th>
+<th>Usage</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Background</td>
+<td><code>#282A36</code></td>
+<td>Editor background</td>
+</tr>
+<tr>
+<td>Current Line</td>
+<td><code>#44475A</code></td>
+<td>Selection / active line</td>
+</tr>
+<tr>
+<td>Foreground</td>
+<td><code>#F8F8F2</code></td>
+<td>Default text</td>
+</tr>
+<tr>
+<td>Comment</td>
+<td><code>#6272A4</code></td>
+<td>Comments, muted text</td>
+</tr>
+<tr>
+<td>Purple</td>
+<td><code>#BD93F9</code></td>
+<td>Keywords</td>
+</tr>
+<tr>
+<td>Pink</td>
+<td><code>#FF79C6</code></td>
+<td>Operators</td>
+</tr>
+<tr>
+<td>Green</td>
+<td><code>#50FA7B</code></td>
+<td>Strings</td>
+</tr>
+</tbody>
+</table>
+<h2 id="notes-for-contributors">Notes for contributors</h2>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Every port must follow the <a href="https://draculatheme.com/contribute">official spec</a> exactly — no custom colors.</p>
+</div>
+<div class="admonition abstract">
+<p class="admonition-title">Abstract</p>
+<p>tl;dr: fork the <a href="https://github.com/dracula/contributing-guide">contributing guide repo</a>, copy the closest existing port, swap the palette.</p>
+</div>
+<div class="admonition info">
+<p class="admonition-title">Info</p>
+<p>Dracula has 400+ official ports, from editors to hardware keyboards.</p>
+</div>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<p>Test your port against real code with syntax highlighting before submitting — flat colors alone can hide contrast issues.</p>
+</div>
+<div class="admonition success">
+<p class="admonition-title">Success</p>
+<p>Once merged, your port is listed on <a href="https://draculatheme.com">draculatheme.com</a> and this <code>mkdocs</code> theme is one of them.</p>
+</div>
+<div class="admonition question">
+<p class="admonition-title">Question</p>
+<p>Not sure which repo to fork? Check the <a href="https://draculatheme.com">ports list</a> for a project similar to yours.</p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Don't rename the official color variables (<code>--purple</code>, <code>--cyan</code>, etc.) — themes and tooling depend on those names staying stable.</p>
+</div>
+<div class="admonition failure">
+<p class="admonition-title">Failure</p>
+<p>A port that changes background/foreground contrast ratios below WCAG AA will be rejected in review.</p>
+</div>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>Never hardcode hex values in component CSS — always reference the palette variables, or the port breaks when the palette updates.</p>
+</div>
+<div class="admonition bug">
+<p class="admonition-title">Bug</p>
+<p>Found a color mismatch against the spec? Open an issue on the <a href="https://github.com/dracula">ports repo</a>.</p>
+</div>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>This very page is an example: it's built with <code>mkdocs-dracula-theme</code>, itself a Dracula port for MkDocs sites.</p>
+</div>
+<div class="admonition quote">
+<p class="admonition-title">Quote</p>
+<p>"The most famous theme ever created and available everywhere." — <a href="https://draculatheme.com">draculatheme.com</a></p>
+</div>
+<div class="admonition warning">
+<p class="admonition-title">Before you open a PR</p>
+<p>Read <code>CONTRIBUTING.md</code> in the target repo — most ports have screenshot and structure requirements beyond just the colors.</p>
+</div>
+<h2 id="footer">Footer</h2>
+<p>This page's footer is controlled by <code>theme.show_footer</code> in <code>mkdocs.yml</code>,
+linking back to the <a href="https://github.com/dracula/mkdocs">dracula/mkdocs</a>
+repository unless disabled.</p></p>
     </article>
 </section>
             <!-- endblock -->
