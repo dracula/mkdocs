@@ -1,0 +1,55 @@
+# Ruff configuration
+# Modern and fast Python linter
+
+# Line length
+line-length = 79
+
+# Target Python version
+target-version = "py39"
+
+# Exclude patterns
+exclude = [
+    ".git",
+    "__pycache__",
+    ".venv",
+    "venv",
+    "build",
+    "dist",
+    "*.egg-info",
+]
+
+# Lint configuration
+[lint]
+# Enable specific rule sets
+select = [
+    "E",   # pycodestyle errors
+    "W",   # pycodestyle warnings
+    "F",   # pyflakes
+    "I",   # isort
+    "B",   # flake8-bugbear
+    "C4",  # flake8-comprehensions
+    "UP",  # pyupgrade
+]
+
+# Ignore specific rules
+ignore = [
+    "B008",   # Do not perform function calls in argument defaults
+    "E203",   # Whitespace before ':' (flake8 compatibility - handled separately)
+    "E501",
+]
+
+# Allowed configurations for specific rules
+[lint.per-file-ignores]
+"__init__.py" = ["F401"]  # Allow unused imports in __init__.py
+"tests/**" = ["S101"]  # Allow assert in tests
+
+# Import sorting (isort)
+[lint.isort]
+known-first-party = ["mkdocs_dracula_theme"]
+force-single-line = false
+
+# Formatting (alternative to black)
+[format]
+quote-style = "double"
+indent-style = "space"
+skip-magic-trailing-comma = false
