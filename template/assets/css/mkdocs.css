@@ -444,16 +444,21 @@ img, svg {
 }
 
 .btn-toggle::after {
+    display: inline-block;
     width: 1.25em;
-    line-height: 0;
-    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%280,0,0,.5%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
-    transition: transform .35s ease;
+    height: 1.25em;
+    content: "";
+    background-color: var(--purple);
+    -webkit-mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e") no-repeat center / contain;
+    mask: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='%23000' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e") no-repeat center / contain;
+    transition: transform .35s ease, background-color .16s ease-in-out;
     transform-origin: .5em 50%;
     margin-left: 10px;
 }
 
-[data-bs-theme="dark"] .btn-toggle::after {
-    content: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 16 16'%3e%3cpath fill='none' stroke='rgba%28248,248,242,1%29' stroke-linecap='round' stroke-linejoin='round' stroke-width='2' d='M5 14l6-6-6-6'/%3e%3c/svg%3e");
+.btn-toggle:hover::after,
+.btn-toggle:focus::after {
+    background-color: var(--cyan);
 }
 
 .btn-toggle[aria-expanded="true"] {
@@ -461,16 +466,19 @@ img, svg {
 }
 
 .btn-toggle[aria-expanded="true"]::after {
+    background-color: var(--pink);
     transform: rotate(90deg);
 }
 
 .drac-anchor-secondary {
-    margin-left: 10%;
+    margin-left: 0;
 }
 
 .drac-box-ternary {
-    margin-top: 3%;
-    margin-left: 10%;
+    margin-top: 0;
+    margin-left: 0.75rem;
+    padding-left: 0.75rem;
+    border-left: 2px solid var(--greySecondary);
 }
 
 .drac-input-search {
