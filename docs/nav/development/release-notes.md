@@ -2,6 +2,13 @@
 
 ---
 
+## v1.1.0
+
+- [⚙️ FEATURE-#28: Add `show_footer` option to hide the theme footer](https://github.com/dracula/mkdocs/issues/28)
+- [⚙️ FEATURE-#29: Add admonition styles with Dracula colors and Font Awesome icons](https://github.com/dracula/mkdocs/issues/29)
+- [⬆️ CI/CD-#34: Gate PyPI releases on automated tests and code quality checks](https://github.com/dracula/mkdocs/issues/34)
+- [🪲 BUG-#36: Fix sidebar chevron color and submenu alignment](https://github.com/dracula/mkdocs/issues/36)
+
 ## v1.0.9
 
 - [📦 PyPI: Build 1.0.9](https://github.com/dracula/mkdocs/releases/tag/v1.0.9) `2026-03-09`
