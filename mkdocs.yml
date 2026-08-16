@@ -13,7 +13,12 @@ nav:
       - nav/settings/show-footer.md
     - Development:
       - nav/development/development-guide.md
+      - nav/development/component-showcase.md
       - nav/development/release-notes.md
+
+markdown_extensions:
+  - admonition
+  - tables
 
 theme:
   name: dracula

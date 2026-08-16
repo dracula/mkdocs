@@ -11,6 +11,22 @@ def theme_dir():
     return Path(mkdocs_dracula_theme.__file__).parent
 
 
+@pytest.fixture(scope="session")
+def css_source():
+    return (
+        Path(__file__).parent.parent
+        / "template"
+        / "assets"
+        / "css"
+        / "mkdocs.css"
+    )
+
+
+@pytest.fixture(scope="session")
+def css_min(theme_dir):
+    return theme_dir / "assets" / "css" / "mkdocs.min.css"
+
+
 @pytest.fixture()
 def docs_dir(tmp_path):
     d = tmp_path / "docs"
