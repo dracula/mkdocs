@@ -1,11 +1,14 @@
 import textwrap
-import pytest
 from pathlib import Path
 
+import pytest
 
-THEME_DIR = Path(__file__).parent.parent / "mkdocs_dracula_theme"
-CSS_SOURCE = Path(__file__).parent.parent / "template" / "assets" / "css" / "mkdocs.css"
-CSS_MIN = THEME_DIR / "assets" / "css" / "mkdocs.min.css"
+import mkdocs_dracula_theme
+
+
+@pytest.fixture(scope="session")
+def theme_dir():
+    return Path(mkdocs_dracula_theme.__file__).parent
 
 
 @pytest.fixture()
@@ -19,8 +22,8 @@ def docs_dir(tmp_path):
 @pytest.fixture()
 def build_site(tmp_path, docs_dir):
     """Factory: build a minimal MkDocs site and return the index.html content."""
-    from mkdocs.config import load_config
     from mkdocs.commands.build import build
+    from mkdocs.config import load_config
 
     def _build(extra_theme_config: str = "") -> str:
         config_text = textwrap.dedent(f"""
