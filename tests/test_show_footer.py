@@ -1,8 +1,12 @@
 """Tests for PR #32 — show_footer config option."""
-import yaml
+
 from pathlib import Path
 
-THEME_YML = Path(__file__).parent.parent / "mkdocs_dracula_theme" / "mkdocs_theme.yml"
+import yaml
+
+THEME_YML = (
+    Path(__file__).parent.parent / "mkdocs_dracula_theme" / "mkdocs_theme.yml"
+)
 FOOTER_TEXT = "Made with Dracula Theme for MkDocs"
 
 
@@ -10,7 +14,9 @@ class TestShowFooterDefault:
     def test_default_config_declares_show_footer(self):
         """mkdocs_theme.yml must declare show_footer key."""
         config = yaml.safe_load(THEME_YML.read_text())
-        assert "show_footer" in config, "show_footer key missing from mkdocs_theme.yml"
+        assert "show_footer" in config, (
+            "show_footer key missing from mkdocs_theme.yml"
+        )
 
     def test_default_value_is_true(self):
         """Default value of show_footer must be True (backwards-compatible)."""
@@ -34,6 +40,9 @@ class TestShowFooterDefault:
 
     def test_base_template_has_conditional(self):
         """base.html must wrap the footer include with show_footer conditional."""
-        base = (Path(__file__).parent.parent / "mkdocs_dracula_theme" / "base.html").read_text()
-        assert "config.theme.show_footer" in base, \
+        base = (
+            Path(__file__).parent.parent / "mkdocs_dracula_theme" / "base.html"
+        ).read_text()
+        assert "config.theme.show_footer" in base, (
             "base.html must guard the footer include with {% if config.theme.show_footer %}"
+        )
