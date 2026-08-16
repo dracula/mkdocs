@@ -10,6 +10,7 @@ nav:
     - Settings:
       - nav/settings/favicon.md
       - nav/settings/custom-highlight.md
+      - nav/settings/show-footer.md
     - Development:
       - nav/development/development-guide.md
       - nav/development/release-notes.md
