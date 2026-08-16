@@ -87,7 +87,7 @@ palette = {
     tl;dr: fork the [contributing guide repo](https://github.com/dracula/contributing-guide), copy the closest existing port, swap the palette.
 
 !!! info
-    Dracula has 500+ official ports, from editors to hardware keyboards.
+    Dracula has 400+ official ports, from editors to hardware keyboards.
 
 !!! tip
     Test your port against real code with syntax highlighting before submitting — flat colors alone can hide contrast issues.
@@ -114,7 +114,7 @@ palette = {
     This very page is an example: it's built with `mkdocs-dracula-theme`, itself a Dracula port for MkDocs sites.
 
 !!! quote
-    "Dark theme for [your favorite app]" — the tagline behind almost every Dracula port's README.
+    "The most famous theme ever created and available everywhere." — [draculatheme.com](https://draculatheme.com)
 
 !!! warning "Before you open a PR"
     Read `CONTRIBUTING.md` in the target repo — most ports have screenshot and structure requirements beyond just the colors.
